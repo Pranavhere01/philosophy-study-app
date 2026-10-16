@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#2f6b4f">
+<meta name="description" content="A calm, offline study companion for IGNOU MAPY and UGC NET — one focused first pass, 16 October to 19 November 2026.">
+<title>Philosophy · 35-day study companion</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f6b4f'/%3E%3Cpath d='M32 16c-4-3-9-4-14-3v32c5-1 10 0 14 3 4-3 9-4 14-3V13c-5-1-10 0-14 3z' fill='%23f6f4ec'/%3E%3Cpath d='M32 16v32' stroke='%23a66a2e' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="app-header">
+  <div class="app-header__inner">
+    <a class="brand" href="#today">
+      <span class="brand__mark" aria-hidden="true">φ</span>
+      <span class="brand__text">
+        <span class="brand__name">A Little Clearer</span>
+        <span class="brand__sub">IGNOU MAPY · UGC NET</span>
+      </span>
+    </a>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#today" data-view="today" aria-current="page">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 4h16M8 3v4M16 3v4"/></svg>
+        <span>Today</span>
+      </a>
+      <a href="#syllabus" data-view="syllabus">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2V3z"/></svg>
+        <span>Syllabus</span>
+      </a>
+      <a href="#reading" data-view="reading">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zm3 0v14h10V5H7zm2 3h6M9 12h6M9 15h4"/></svg>
+        <span>Reading room</span>
+      </a>
+      <a href="#plan" data-view="plan">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
+        <span>35-day plan</span>
+      </a>
+      <a href="#help" data-view="help">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 6v2m0 3v.01"/></svg>
+        <span>Help</span>
+      </a>
+    </nav>
+
+    <div class="save-badge" id="save-badge" role="status" aria-live="polite" title="Where progress is saved">
+      <span class="save-badge__dot" aria-hidden="true"></span>
+      <span class="save-badge__text" id="save-badge-text">Loading…</span>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="main">
+
+  <!-- ============================ TODAY ============================ -->
+  <section class="view" id="view-today" data-viewpanel="today" aria-labelledby="today-h">
+    <div class="hero">
+      <div class="hero__body">
+        <p class="eyebrow" id="day-kicker">Day — of 35</p>
+        <h1 id="today-h" class="hero__title">Your study day</h1>
+        <p class="hero__sub" id="day-sub">Loading your plan…</p>
+      </div>
+      <div class="hero__aside">
+        <div class="day-switch" role="group" aria-label="Choose study day">
+          <button class="btn btn-icon" id="day-prev" aria-label="Previous day">‹</button>
+          <select class="select" id="day-select" aria-label="Study day"></select>
+          <button class="btn btn-icon" id="day-next" aria-label="Next day">›</button>
+        </div>
+        <button class="btn btn-ghost" id="day-today">Today</button>
+      </div>
+    </div>
+
+    <div class="today-grid">
+      <section class="card chant-card" aria-labelledby="chant-h">
+        <div class="card__head">
+          <h2 class="card__title" id="chant-h">Chanting</h2>
+          <span class="pill" id="chant-goal" aria-live="polite"></span>
+        </div>
+        <p class="chant-card__note">Target 16 actual rounds each day. Count what you complete — a timer alone is not a round.</p>
+        <div class="chant-stepper">
+          <button class="btn btn-round" id="chant-minus" aria-label="Remove one round">−</button>
+          <div class="chant-count" aria-live="polite">
+            <span class="chant-count__n" id="chant-value">0</span>
+            <span class="chant-count__of">of 16 rounds</span>
+          </div>
+          <button class="btn btn-round btn-round--add" id="chant-plus" aria-label="Add one round">+</button>
+        </div>
+        <label class="chant-input">
+          <span class="sr-only">Enter exact rounds</span>
+          <input type="number" id="chant-number" min="0" max="10000" step="1" inputmode="numeric" placeholder="Or type the exact count…">
+        </label>
+      </section>
+
+      <section class="stats" id="stats" aria-label="Syllabus coverage"></section>
+    </div>
+
+    <div class="section-head">
+      <h2 class="section-head__title">Today’s sessions</h2>
+      <p class="section-head__sub">A tick means you read it and can recall its main ideas. It tracks coverage, not marks.</p>
+    </div>
+    <div class="sessions" id="sessions"></div>
+
+    <div class="two-col">
+      <section class="card" aria-labelledby="night-h">
+        <div class="card__head">
+          <h2 class="card__title" id="night-h">Night research · 21:00–22:00</h2>
+        </div>
+        <p class="card__note" id="night-prompt"></p>
+        <label class="check-row">
+          <input type="checkbox" id="night-check">
+          <span>Research logged (one question, source or argument kept)</span>
+        </label>
+        <label class="field">
+          <span class="field__label">Research note</span>
+          <textarea id="night-note" maxlength="50000" placeholder="One topic, one source, one argument or objection — 25 min reading, 25 min notes, 10 min reflection."></textarea>
+        </label>
+      </section>
+
+      <section class="card" aria-labelledby="notes-h">
+        <div class="card__head">
+          <h2 class="card__title" id="notes-h">Leave a trail for tomorrow</h2>
+        </div>
+        <label class="field">
+          <span class="field__label">Day note</span>
+          <textarea id="day-notes" maxlength="50000" placeholder="What became clear? What needs another look? Add a source, a doubt, or a line from tonight’s reading."></textarea>
+        </label>
+        <div class="score-row">
+          <label class="field field--inline">
+            <span class="field__label">MCQs attempted</span>
+            <input type="number" id="score-attempted" min="0" max="10000" step="1" inputmode="numeric">
+          </label>
+          <label class="field field--inline">
+            <span class="field__label">Correct</span>
+            <input type="number" id="score-correct" min="0" max="10000" step="1" inputmode="numeric">
+          </label>
+          <span class="accuracy" id="accuracy" aria-live="polite"></span>
+        </div>
+        <p class="field__hint" id="score-error" role="status"></p>
+      </section>
+    </div>
+
+    <section class="card audit" id="audit-card" hidden aria-labelledby="audit-h">
+      <div class="card__head">
+        <h2 class="card__title" id="audit-h">19 November · final coverage audit</h2>
+      </div>
+      <p class="card__note">These checks record that you reviewed the evidence. They do not complete any unfinished unit or packet.</p>
+      <ul class="task-list" id="audit-list"></ul>
+    </section>
+  </section>
+
+  <!-- ============================ SYLLABUS ============================ -->
+  <section class="view" id="view-syllabus" data-viewpanel="syllabus" aria-labelledby="syllabus-h" hidden>
+    <div class="hero hero--compact">
+      <div class="hero__body">
+        <p class="eyebrow">Every item has its place</p>
+        <h1 id="syllabus-h" class="hero__title">Syllabus checklist</h1>
+        <p class="hero__sub">The same checkboxes as your daily plan — change one and every view updates.</p>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="segmented" role="tablist" aria-label="Syllabus stream" id="stream-tabs">
+        <button role="tab" class="segmented__btn is-active" data-stream="year1" aria-selected="true">Year 1</button>
+        <button role="tab" class="segmented__btn" data-stream="year2" aria-selected="false">Year 2</button>
+        <button role="tab" class="segmented__btn" data-stream="net1" aria-selected="false">NET · Paper I</button>
+        <button role="tab" class="segmented__btn" data-stream="net2" aria-selected="false">NET · Paper II</button>
+      </div>
+      <div class="toolbar__controls">
+        <label class="search">
+          <span class="sr-only">Search</span>
+          <input type="search" id="syllabus-search" placeholder="Search by title or ID…">
+        </label>
+        <label class="select-wrap">
+          <span class="sr-only">Filter by course</span>
+          <select class="select" id="syllabus-course"></select>
+        </label>
+      </div>
+    </div>
+
+    <div id="syllabus-list"></div>
+  </section>
+
+  <!-- ============================ READING ROOM ============================ -->
+  <section class="view" id="view-reading" data-viewpanel="reading" aria-labelledby="reading-h" hidden>
+    <div class="hero hero--compact">
+      <div class="hero__body">
+        <p class="eyebrow">Reading &amp; lectures</p>
+        <h1 id="reading-h" class="hero__title">Reading room</h1>
+        <p class="hero__sub">Official unit first, primary text second, professor enrichment third — with the exact locator beside each link.</p>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="segmented" role="tablist" aria-label="Reading room stream" id="reading-tabs">
+        <button role="tab" class="segmented__btn is-active" data-stream="all" aria-selected="true">All</button>
+        <button role="tab" class="segmented__btn" data-stream="year1" aria-selected="false">Year 1</button>
+        <button role="tab" class="segmented__btn" data-stream="year2" aria-selected="false">Year 2</button>
+        <button role="tab" class="segmented__btn" data-stream="net1" aria-selected="false">NET I</button>
+        <button role="tab" class="segmented__btn" data-stream="net2" aria-selected="false">NET II</button>
+      </div>
+      <div class="toolbar__controls">
+        <label class="search">
+          <span class="sr-only">Search resources</span>
+          <input type="search" id="reading-search" placeholder="Search by title, course or source…">
+        </label>
+      </div>
+    </div>
+
+    <div id="reading-list"></div>
+  </section>
+
+  <!-- ============================ PLAN ============================ -->
+  <section class="view" id="view-plan" data-viewpanel="plan" aria-labelledby="plan-h" hidden>
+    <div class="hero hero--compact">
+      <div class="hero__body">
+        <p class="eyebrow">16 October — 19 November 2026</p>
+        <h1 id="plan-h" class="hero__title">The whole journey</h1>
+        <p class="hero__sub">31 content days and 4 repair days. Dates stay fixed so unfinished work stays visible.</p>
+      </div>
+      <div class="hero__aside">
+        <button class="btn btn-primary" id="download-plan">Download plan · Markdown</button>
+      </div>
+    </div>
+
+    <section class="card">
+      <h2 class="card__title">Your daily rhythm</h2>
+      <div class="routine" id="routine"></div>
+      <p class="card__note">All times are Bengaluru (IST). The accompanying plan carries the reading method and workload notes.</p>
+    </section>
+
+    <div class="callout">
+      This is a compressed first pass through <strong>241 IGNOU units</strong> and <strong>62 NET packets</strong>.
+      If a topic needs more time, leave it unchecked and use a repair day. A ticked outline is not a substitute
+      for reading the underlying material.
+    </div>
+
+    <div class="plan-grid" id="plan-grid"></div>
+  </section>
+
+  <!-- ============================ HELP ============================ -->
+  <section class="view" id="view-help" data-viewpanel="help" aria-labelledby="help-h" hidden>
+    <div class="hero hero--compact">
+      <div class="hero__body">
+        <p class="eyebrow">Backup · privacy · sources</p>
+        <h1 id="help-h" class="hero__title">How this works</h1>
+      </div>
+    </div>
+
+    <div class="help-grid">
+      <section class="card">
+        <h2 class="card__title">What the numbers mean</h2>
+        <p class="card__note">Year 1 (121) and Year 2 (120) count individual IGNOU units. Each NET paper counts its 31
+        scheduled packets — a packet may hold several syllabus clauses, so tick it only when all are covered.
+        Chanting uses actual round counts; a 150-minute timer is not 16 rounds. Counts are coverage, not marks,
+        mastery or exam readiness.</p>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title">Where progress is saved</h2>
+        <p class="card__note">Everything saves to this browser’s local storage — no account, no server, no uploads.
+        To keep a copy or move between devices, use <strong>Export JSON</strong>, then <strong>Import</strong> it on
+        the other device. Your notes and ticks are private to this browser unless you export and share them yourself.</p>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title">Backup &amp; restore</h2>
+        <ul class="help-actions">
+          <li><button class="btn btn-primary" id="export-json">Export progress · JSON</button> <span class="muted">portable backup</span></li>
+          <li><button class="btn" id="import-json">Import progress</button> <span class="muted">replaces after you confirm</span></li>
+          <li><button class="btn" id="export-md">Export checklist · Markdown</button> <span class="muted">readable snapshot</span></li>
+          <li><button class="btn btn-danger-ghost" id="reset-progress">Reset all progress</button> <span class="muted">asks before clearing</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title">Sources &amp; scope</h2>
+        <p class="card__note">Curriculum: the official <strong>IGNOU MAPY Programme Guide (pages 9–27)</strong> and the
+        official <strong>UGC NET Paper I and Philosophy Paper II syllabus PDFs</strong>. The plan maps those units and
+        clauses into daily packets. Source flags stay visible rather than being silently repaired — for example
+        <strong>MPYE-014, Block 3</strong> prints unit numbers <strong>2, 3, 4, 4</strong>, so separate IDs distinguish
+        the two “Unit 4” entries.</p>
+        <ul class="source-list" id="source-list"></ul>
+      </section>
+    </div>
+  </section>
+
+</main>
+
+<footer class="app-footer">
+  <div class="container app-footer__inner">
+    <p class="app-footer__line"><strong>Made for steady work.</strong> Offline · no account · nothing uploaded.</p>
+    <p class="app-footer__line muted" id="footer-summary"></p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Primary mobile">
+  <a href="#today" data-view="today" aria-current="page"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 4h16M8 3v4M16 3v4"/></svg><span>Today</span></a>
+  <a href="#syllabus" data-view="syllabus"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2V3z"/></svg><span>Syllabus</span></a>
+  <a href="#reading" data-view="reading"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zm3 0v14h10V5H7zm2 3h6M9 12h6M9 15h4"/></svg><span>Reading</span></a>
+  <a href="#plan" data-view="plan"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg><span>Plan</span></a>
+  <a href="#help" data-view="help"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 6v2m0 3v.01"/></svg><span>Help</span></a>
+</nav>
+
+<input id="import-file" type="file" accept=".json,application/json" hidden>
+
+<dialog id="import-dialog" class="dialog">
+  <h2 class="dialog__title">Import this backup?</h2>
+  <div class="dialog__body" id="import-summary"></div>
+  <div class="dialog__actions">
+    <button class="btn" id="import-cancel">Cancel</button>
+    <button class="btn btn-primary" id="import-confirm">Replace current progress</button>
+  </div>
+</dialog>
+
+<dialog id="reset-dialog" class="dialog">
+  <h2 class="dialog__title">Reset all progress?</h2>
+  <div class="dialog__body"><p>This clears every tick, note, score and round count in this browser. Export a backup first if you might want it back.</p></div>
+  <div class="dialog__actions">
+    <button class="btn" id="reset-cancel">Cancel</button>
+    <button class="btn btn-danger" id="reset-confirm">Yes, clear everything</button>
+  </div>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
