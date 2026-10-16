@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="German-taught universities worldwide, the English-taught fallback, and a short background on Sanskrit — the three languages that matter for a philosophy study path.">
+<title>German mode · German, English &amp; Sanskrit — study and language paths</title>
+<style>
+  :root{
+    --ink:#141414; --muted:#5b6470; --rule:#d9dee5; --bg:#fbfbf9; --card:#fff;
+    --accent:#14532d; --accent2:#1f4e5f;
+    --ok:#1c6b3c; --warn:#8a5a00; --bad:#9b2226; --pend:#5b6470;
+    --okbg:#e8f5ec; --warnbg:#fdf3dd; --badbg:#fbeaea; --pendbg:#eef1f4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px 96px}
+  header.top{background:linear-gradient(160deg,#14532d,#1f4e5f);color:#fff;padding:40px 0 32px}
+  header.top .wrap{padding-bottom:0}
+  header.top h1{font-size:1.85rem;line-height:1.25;margin:0 0 10px;font-weight:700;letter-spacing:-.01em}
+  header.top .sub{color:#cfe0d6;margin:0 0 22px;font-size:.98rem}
+  .profile{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+  .profile li{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 12px}
+  .profile dt{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:#a8c4b4;margin-bottom:3px}
+  .profile dd{margin:0;font-weight:600;font-size:.95rem}
+  nav.toc{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 18px;margin:22px 0 30px}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:32px}
+  @media(max-width:640px){nav.toc ol{columns:1}}
+  nav.toc a{color:var(--accent2);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  h2{font-size:1.33rem;margin:44px 0 6px;padding-bottom:8px;border-bottom:2px solid var(--rule);letter-spacing:-.01em}
+  h3{font-size:1.06rem;margin:26px 0 8px}
+  h4{font-size:.93rem;margin:18px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  p{margin:10px 0}
+  a{color:var(--accent2)}
+  .lede{font-size:1.05rem;color:#2c3540}
+  code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:.88em}
+  .src{font-size:.78rem;color:var(--muted)}
+  .src a{color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.88rem;background:var(--card)}
+  caption{caption-side:top;text-align:left;font-size:.82rem;color:var(--muted);padding-bottom:6px}
+  th,td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#f2f4f7;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#414b57}
+  tbody tr:nth-child(even){background:#fafbfc}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .badge{display:inline-block;font-size:.71rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap;letter-spacing:.03em}
+  .b-ok{background:var(--okbg);color:var(--ok)} .b-warn{background:var(--warnbg);color:var(--warn)}
+  .b-bad{background:var(--badbg);color:var(--bad)} .b-pend{background:var(--pendbg);color:var(--pend)}
+  .b-info{background:#e7eef5;color:var(--accent2)}
+  .callout{border-left:4px solid var(--accent2);background:var(--card);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+  .callout.danger{border-left-color:var(--bad);background:var(--badbg)}
+  .callout.win{border-left-color:var(--ok);background:var(--okbg)}
+  .callout.amber{border-left-color:var(--warn);background:var(--warnbg)}
+  .callout h4{margin-top:0;color:inherit;text-transform:none;letter-spacing:0;font-size:.95rem}
+  .callout p:last-child{margin-bottom:0}
+  ul.tight li{margin:4px 0}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  footer.end{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted)}
+  @media print{
+    header.top{background:#fff;color:#000;padding:0 0 12px}
+    header.top .sub,.profile dt{color:#444}
+    .profile li{border:1px solid #ccc;background:#fff}
+    nav.toc{display:none}
+    body{background:#fff;font-size:10.5pt}
+    .wrap{max-width:none;padding:0}
+    h2{page-break-after:avoid}
+    table,.callout{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>German mode — the languages that open study doors</h1>
+    <p class="sub">German-taught universities worldwide · the English fallback that keeps breadth · a short Sanskrit background · <a href="./index.html" style="color:#cfe0d6">back to the study app</a></p>
+    <ul class="profile">
+      <li><dl><dt>Primary language</dt><dd>German — German-taught degrees</dd></dl></li>
+      <li><dl><dt>Fallback</dt><dd>English — English-taught degrees</dd></dl></li>
+      <li><dl><dt>Background</dt><dd>Sanskrit — language of the source texts</dd></dl></li>
+      <li><dl><dt>Field</dt><dd>Philosophy</dd></dl></li>
+      <li><dl><dt>Level</dt><dd>Master's / PhD after MAPY</dd></dl></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <ol>
+    <li><a href="#decision">The decision that shapes everything</a></li>
+    <li><a href="#cert">German: the certificate &amp; the level you need</a></li>
+    <li><a href="#de">German-taught — Germany</a></li>
+    <li><a href="#at">German-taught — Austria</a></li>
+    <li><a href="#ch">German-taught — Switzerland</a></li>
+    <li><a href="#elsewhere">German-taught — elsewhere</a></li>
+    <li><a href="#english">English: the fallback with breadth</a></li>
+    <li><a href="#sanskrit">Sanskrit: a short background</a></li>
+    <li><a href="#cost">Cost at a glance</a></li>
+    <li><a href="#learn">Where to learn German</a></li>
+    <li><a href="#caveats">Caveats &amp; sources</a></li>
+  </ol>
+</nav>
+
+<!-- ============================================================ -->
+<section id="decision">
+<h2>1. The decision that shapes everything</h2>
+
+<p class="lede">"German-taught" is a language gate, not a geography gate. To enrol in a degree
+taught <em>in German</em> you must already hold a certified <strong>B2–C1 in German</strong> on
+the day you apply — not on the day you arrive. The universities are the easy part; the certificate
+is the project.</p>
+
+<p>This page therefore covers three things together, because they are one decision:</p>
+
+<ul class="tight">
+  <li><strong>German</strong> — the German-medium (German-taught) degree programmes, grouped by country, with the cost and the language proof each one expects.</li>
+  <li><strong>English</strong> — the fallback that keeps the breadth: the same universities offer English-taught degrees you can enter <em>now</em>, while you learn German on the side.</li>
+  <li><strong>Sanskrit</strong> — a short background, because the philosophy source texts behind this study path are written in it, and reading the terms precisely beats memorising English glosses.</li>
+</ul>
+
+<div class="callout amber">
+  <h4>The honest rule</h4>
+  <p>Reach C1 <em>before</em> the application deadline, not during. German <strong>bachelor's</strong>
+  programmes are overwhelmingly German-taught; <strong>master's</strong> programmes are increasingly
+  English-taught. If the goal is to study <em>soon</em> rather than <em>in German</em>, start on the
+  English track (§7) and keep German running in parallel.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="cert">
+<h2>2. German — the certificate &amp; the level you need</h2>
+
+<p>Universities accept one of a handful of standard proofs. Any one of these opens the German-taught route:</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:34%">Certificate</th><th>Who issues it</th><th>Level typically required</th></tr></thead>
+  <tbody>
+    <tr><td><strong>TestDaF</strong></td><td>TestDaF-Institut (Germany)</td><td><strong>TDN 4</strong> in all four sections</td></tr>
+    <tr><td><strong>DSH</strong></td><td>German universities</td><td><strong>DSH-2</strong> (DSH-3 for some subjects)</td></tr>
+    <tr><td><strong>Goethe-Zertifikat</strong></td><td>Goethe-Institut</td><td><strong>C1</strong> (some accept C2)</td></tr>
+    <tr><td><strong>telc Deutsch C1 Hochschule</strong></td><td>telc</td><td><strong>C1</strong></td></tr>
+    <tr><td><strong>ÖSD Zertifikat C1/C2</strong></td><td>ÖSD (Austria)</td><td><strong>C1/C2</strong> — preferred in Austria</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>If your school-leaving certificate is not recognised as equivalent to the German <em>Abitur</em>, you
+may first need a <strong>Studienkolleg</strong> (foundation year) ending in the
+<strong>Feststellungsprüfung</strong> — common for non-EU applicants depending on the case.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="de">
+<h2>3. German-taught — Germany</h2>
+
+<p class="lede">Germany is the core: the largest number of German-medium programmes in the world, and
+most public universities charge <strong>no tuition</strong>.</p>
+
+<h4>Cost model (public universities)</h4>
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:34%">State / case</th><th>Tuition</th></tr></thead>
+  <tbody>
+    <tr><td>14 of 16 states, public universities</td><td><strong>€0 tuition</strong> — only a semester contribution of ~€100–350 (admin + public-transport ticket)</td></tr>
+    <tr><td><strong>Baden-Württemberg</strong> (Heidelberg, Freiburg, Tübingen, Stuttgart, Karlsruhe…)</td><td><strong>€1,500/semester</strong> for non-EU/third-country students</td></tr>
+    <tr><td><strong>TUM (Munich, Bavaria)</strong></td><td>Tuition for non-EU international students from winter 2024/25: bachelor ~€2,000–3,000/sem, master ~€4,000–6,000/sem (varies by programme)</td></tr>
+    <tr><td>Private universities</td><td>€10,000–30,000+/year (skip unless a specific programme justifies it)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Living cost (rent, food, health insurance, semester ticket): budget roughly <strong>€900–1,200/month</strong>.
+The visa baseline (blocked account) is ~€11,904/year for 2025.</p>
+
+<h4>Curated universities (German-taught)</h4>
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:42%">University</th><th>City</th><th>Note</th></tr></thead>
+  <tbody>
+    <tr><td>Ludwig-Maximilians-Universität (LMU)</td><td>Munich</td><td>Top-ranked comprehensive; nearly all bachelor's in German</td></tr>
+    <tr><td>Ruprecht-Karls-Universität Heidelberg</td><td>Heidelberg</td><td>Oldest German university; humanities/medicine</td></tr>
+    <tr><td>Technische Universität München (TUM)</td><td>Munich</td><td>Top technical university; <strong>now charges non-EU tuition</strong></td></tr>
+    <tr><td>Humboldt-Universität zu Berlin</td><td>Berlin</td><td>Humanities/social sciences</td></tr>
+    <tr><td>Freie Universität Berlin (FU Berlin)</td><td>Berlin</td><td>Humanities, politics, natural sciences</td></tr>
+    <tr><td>RWTH Aachen</td><td>Aachen</td><td>Engineering (TU9)</td></tr>
+    <tr><td>Universität Tübingen</td><td>Tübingen</td><td>Humanities, medicine, sciences</td></tr>
+    <tr><td>Albert-Ludwigs-Universität Freiburg</td><td>Freiburg</td><td>Humanities, medicine</td></tr>
+    <tr><td>Georg-August-Universität Göttingen</td><td>Göttingen</td><td>Research university, strong humanities</td></tr>
+    <tr><td>Universität Hamburg</td><td>Hamburg</td><td>Largest in northern Germany</td></tr>
+    <tr><td>Universität Leipzig</td><td>Leipzig</td><td>East Germany, humanities/medicine</td></tr>
+    <tr><td>Goethe-Universität Frankfurt</td><td>Frankfurt</td><td>Social sciences, economics</td></tr>
+    <tr><td>Universität zu Köln</td><td>Cologne</td><td>Economics, law, medicine</td></tr>
+    <tr><td>Rheinische Friedrich-Wilhelms-Universität Bonn</td><td>Bonn</td><td>Mathematics, sciences, law</td></tr>
+    <tr><td>Technische Universität Dresden</td><td>Dresden</td><td>Engineering (TU9)</td></tr>
+    <tr><td>Karlsruher Institut für Technologie (KIT)</td><td>Karlsruhe</td><td>Engineering (TU9)</td></tr>
+    <tr><td>Universität Stuttgart</td><td>Stuttgart</td><td>Engineering (TU9)</td></tr>
+    <tr><td>Technische Universität Berlin</td><td>Berlin</td><td>Engineering (TU9)</td></tr>
+    <tr><td>Friedrich-Alexander-Universität Erlangen-Nürnberg</td><td>Erlangen</td><td>Strong across sciences/engineering</td></tr>
+    <tr><td>Westfälische Wilhelms-Universität Münster</td><td>Münster</td><td>Law, humanities</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>TU9</strong> (the nine leading technical universities, for engineering in German): RWTH Aachen,
+TU Berlin, TU Braunschweig, TU Darmstadt, TU Dresden, Leibniz Universität Hannover, KIT, TUM, Universität Stuttgart.</p>
+
+<h4>Find the exact programme</h4>
+<p>The <strong>DAAD International Programmes database</strong> is the authoritative, filterable catalogue — set
+"language of instruction = German" (or English, for §7):</p>
+<ul class="tight">
+  <li><a href="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/" rel="noopener">DAAD International Programmes database</a></li>
+  <li><a href="https://www.daad.in/en/" rel="noopener">DAAD India — scholarships &amp; guidance for Indian applicants</a></li>
+  <li><a href="https://www.uni-assist.de/en/" rel="noopener">uni-assist — central application portal</a></li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="at">
+<h2>4. German-taught — Austria</h2>
+
+<p><strong>Cost model (public universities):</strong> free for EU/EEA students; <strong>non-EU/third-country
+students pay €726.72/semester</strong> plus the ÖH student-union fee (~€24.70/semester). Universities of
+applied sciences (Fachhochschulen) and private universities charge more.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:46%">University</th><th>City</th><th>Note</th></tr></thead>
+  <tbody>
+    <tr><td>Universität Wien</td><td>Vienna</td><td>Austria's largest; nearly all bachelor's German-taught</td></tr>
+    <tr><td>Technische Universität Wien (TU Wien)</td><td>Vienna</td><td>Engineering</td></tr>
+    <tr><td>Universität Graz</td><td>Graz</td><td>Comprehensive</td></tr>
+    <tr><td>Technische Universität Graz (TU Graz)</td><td>Graz</td><td>Engineering</td></tr>
+    <tr><td>Universität Innsbruck</td><td>Innsbruck</td><td>Comprehensive (Alpine region)</td></tr>
+    <tr><td>Paris Lodron Universität Salzburg</td><td>Salzburg</td><td>Humanities, law</td></tr>
+    <tr><td>Johannes Kepler Universität Linz</td><td>Linz</td><td>Sciences, business</td></tr>
+    <tr><td>Alpen-Adria-Universität Klagenfurt</td><td>Klagenfurt</td><td>Humanities, technical</td></tr>
+    <tr><td>Universität für Bodenkultur Wien (BOKU)</td><td>Vienna</td><td>Agriculture / life sciences</td></tr>
+  </tbody>
+</table>
+</div>
+
+<ul class="tight">
+  <li><a href="https://oead.at/en/" rel="noopener">OeAD — Austrian agency for education &amp; internationalisation</a></li>
+  <li><a href="https://www.osd.at/" rel="noopener">ÖSD — Austrian German certificate</a></li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="ch">
+<h2>5. German-taught — Switzerland</h2>
+
+<p><strong>Cost model:</strong> tuition is low (roughly <strong>CHF 500–1,000/semester</strong> depending on
+university; ETH Zurich ~CHF 730/semester plus fees), but <strong>living costs are among the highest in
+Europe</strong> (~CHF 1,500–2,000+/month).</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:42%">University</th><th>City</th><th>Note</th></tr></thead>
+  <tbody>
+    <tr><td>ETH Zürich</td><td>Zurich</td><td>Top-ranked technical; bachelor's German, master's mostly English</td></tr>
+    <tr><td>Universität Zürich</td><td>Zurich</td><td>Largest Swiss university</td></tr>
+    <tr><td>Universität Basel</td><td>Basel</td><td>Oldest Swiss university</td></tr>
+    <tr><td>Universität Bern</td><td>Bern</td><td>Comprehensive</td></tr>
+    <tr><td>Universität St. Gallen (HSG)</td><td>St. Gallen</td><td>Business/economics, German-taught bachelor's</td></tr>
+    <tr><td>Universität Luzern</td><td>Lucerne</td><td>Law, humanities</td></tr>
+    <tr><td>Universität Freiburg / Fribourg</td><td>Fribourg</td><td><strong>Bilingual German/French</strong></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Geneva, Lausanne (UNIL/EPFL) and Neuchâtel teach in <strong>French</strong> — out of scope here.</p>
+<p><a href="https://www.swissuniversities.ch/en/" rel="noopener">swissuniversities — study portal &amp; admission</a></p>
+</section>
+
+<!-- ============================================================ -->
+<section id="elsewhere">
+<h2>6. German-taught — elsewhere (the breadth)</h2>
+
+<p>Outside the German-speaking core, usually one flagship institution per country carries full
+German-medium programmes:</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:16%">Country</th><th style="width:40%">Institution</th><th>Note</th></tr></thead>
+  <tbody>
+    <tr><td>Hungary</td><td>Andrássy Universität Budapest (AUB)</td><td>Fully German-language university (international relations, comparative law, economics)</td></tr>
+    <tr><td>Italy</td><td>Freie Universität Bozen-Bolzano</td><td><strong>Trilingual</strong> German/Italian/English — many bachelor's run in German</td></tr>
+    <tr><td>Luxembourg</td><td>Universität Luxemburg</td><td>Trilingual FR/DE/EN; several programmes partly German-taught</td></tr>
+    <tr><td>Belgium</td><td>Autonome Hochschule Ostbelgien (Eupen)</td><td>German-speaking community; German-medium nursing, primary education, accounting</td></tr>
+    <tr><td>Romania</td><td>Babeș-Bolyai-Universität (Cluj-Napoca)</td><td>Historic German-language study lines alongside Romanian/Hungarian</td></tr>
+    <tr><td>Kazakhstan</td><td>Deutsch-Kasachische Universität (DKU), Almaty</td><td>German-medium programmes, dual degrees with German partners</td></tr>
+    <tr><td>Türkiye</td><td>Türk-Alman Üniversitesi (Istanbul)</td><td>German-medium engineering, law, social sciences</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="english">
+<h2>7. English — the fallback that keeps the breadth</h2>
+
+<p class="lede">English is the working language of global academia, and it is the reason you do not
+have to wait for C1 German to move. The same German, Austrian and Swiss universities offer thousands
+of <strong>English-taught</strong> degrees — especially master's — that you can enter with an English
+test (IELTS/TOEFL) instead of a German certificate.</p>
+
+<div class="callout win">
+  <h4>The trade-off, stated plainly</h4>
+  <p><strong>English-taught</strong> = start now; the language gate is IELTS/TOEFL; the degree is the same,
+  and in Germany it is usually still tuition-free under the same rules. <strong>German-taught</strong> = the
+  full immersion and the widest programme choice, but only after you hold C1. Most people sequence them:
+  learn German on the side while applying to English-taught master's, then study in German for a later
+  degree or stay in the country on the strength of the language.</p>
+</div>
+
+<ul class="tight">
+  <li>Search the same <a href="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/" rel="noopener">DAAD database</a> with "language of instruction = English".</li>
+  <li>The study app already carries a <strong>funded-PhD &amp; no-tuition master's catalogue</strong> in English —
+  <a href="./funded-phd-guide.html">the guide</a> and the <a href="./funding/index.html">65-programme map</a> across 48 countries — which is the English-language breadth you should read alongside this page.</li>
+  <li>Note the fee difference outside DACH: English-taught master's in the Netherlands, the Nordics and the
+  UK are not free for non-EU students, whereas German-taught and many German English-taught public programmes are.</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="sanskrit">
+<h2>8. Sanskrit — a short background (as a language)</h2>
+
+<p class="lede">Sanskrit (<em>saṃskṛtam</em>, संस्कृतम् — "perfected, refined") is an Old Indo-Aryan
+language of the Indo-European family, and the language in which the Indian philosophical canon was
+written — the <strong>Vedas</strong> and <strong>Upaniṣads</strong>, and the classical systems
+(<strong>Nyāya, Vaiśeṣika, Sāṃkhya, Yoga, Mīmāṃsā, Vedānta</strong>) alongside Buddhist and Jaina
+Sanskrit literature.</p>
+
+<h4>Three facts that make it load-bearing here</h4>
+<ul class="tight">
+  <li><strong>Grammar was codified extremely early and precisely.</strong> Pāṇini's <em>Aṣṭādhyāyī</em>
+  (c. 4th century BCE) is a generative rule-system of ~4,000 rules that remains the reference grammar —
+  arguably the first formal grammar of any language.</li>
+  <li><strong>It is highly inflected and euphonic.</strong> Eight cases, three numbers, three genders,
+  and <em>sandhi</em> (systematic sound combination across word boundaries) — which is why a single
+  term has many surface forms and why transliteration must be exact.</li>
+  <li><strong>Scholarly citation uses IAST</strong> — the International Alphabet of Sanskrit
+  Transliteration with full diacritics (<code>ā ī ū ṛ ṝ ḷ ṣ ś ṃ ḥ ṅ ñ</code>). This is the convention
+  the study module's glossary follows, so <em>anumāna</em>, <em>pramāṇa</em>, <em>vyāpti</em> and
+  <em>pratītyasamutpāda</em> are spelled with their marks, not flattened to ASCII.</li>
+</ul>
+
+<h4>Why it matters to a philosophy student</h4>
+<p>UGC NET Philosophy Paper II <strong>Unit 1</strong> (Vedic and Upaniṣadic thought, Cārvāka, Jainism,
+Buddhism, Nyāya, Vaiśeṣika, Sāṃkhya, Yoga, Pūrva-Mīmāṃsā, Vedānta) and IGNOU <strong>MPY-001</strong>
+are built on Sanskrit technical vocabulary — <em>pramāṇa</em> (means of knowledge), <em>anumāna</em>
+(inference), <em>vyāpti</em> (invariable concomitance), <em>hetvābhāsa</em> (fallacy), <em>ātman</em>,
+<em>brahman</em>, <em>mokṣa</em>, <em>duḥkha</em>, <em>śabda</em>. Reading the term precisely — and
+knowing what its root and compounds contribute — beats memorising a one-line English gloss, and it is
+the single cheapest way to stop confusing near-synonyms in the exam.</p>
+
+<h4>Minimal resources (reputable, mostly free)</h4>
+<ul class="tight">
+  <li><a href="https://www.samskritabharati.in/" rel="noopener">Samskrita Bharati</a> — spoken/conversational Sanskrit.</li>
+  <li><a href="https://www.sanskrit.nic.in/" rel="noopener">Central Sanskrit University</a> — government university and programmes.</li>
+  <li><a href="https://nptel.ac.in/" rel="noopener">NPTEL</a> — free video courses; search "Sanskrit".</li>
+  <li><a href="https://www.sanskrit-lexicon.uni-koeln.de/" rel="noopener">Cologne Digital Sanskrit Dictionaries</a> — Monier-Williams, Apte and others online.</li>
+  <li><a href="https://learnsanskrit.cc/" rel="noopener">learnsanskrit.cc</a> — quick dictionary and transliteration lookup.</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="cost">
+<h2>9. Cost at a glance</h2>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:26%">Country</th><th>Tuition (non-EU, public)</th><th>Living (approx./month)</th><th>German level</th></tr></thead>
+  <tbody>
+    <tr><td>Germany (most states)</td><td>€0 + ~€100–350/sem contribution</td><td>€900–1,200</td><td>TestDaF TDN 4 / DSH-2 / Goethe C1</td></tr>
+    <tr><td>Germany (Baden-Württemberg)</td><td>€1,500/sem</td><td>€900–1,200</td><td>same</td></tr>
+    <tr><td>Germany (TUM)</td><td>€2,000–6,000/sem</td><td>€900–1,200</td><td>same</td></tr>
+    <tr><td>Austria</td><td>€726.72/sem + ~€25 ÖH fee</td><td>€900–1,100</td><td>ÖSD C1 / Goethe C1 / TestDaF 4</td></tr>
+    <tr><td>Switzerland</td><td>~CHF 500–1,000/sem</td><td>CHF 1,500–2,000+</td><td>Goethe C1 / TestDaF 4 / telc C1</td></tr>
+    <tr><td>Elsewhere (AUB, Bozen, TDU…)</td><td>Varies (private or low)</td><td>Varies</td><td>C1 (check each)</td></tr>
+  </tbody>
+</table>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="learn">
+<h2>10. Where to learn German</h2>
+
+<ul class="tight">
+  <li><a href="https://www.goethe.de/en/" rel="noopener">Goethe-Institut</a> — worldwide centres (also across India); C1/C2 certificates.</li>
+  <li><a href="https://www.testdaf.de/en/" rel="noopener">TestDaF</a> — the standard university-admission test.</li>
+  <li><a href="https://www.osd.at/" rel="noopener">ÖSD</a> — Austrian certificate, accepted DACH-wide.</li>
+  <li><a href="https://www.telc.net/" rel="noopener">telc</a> — telc Deutsch C1 Hochschule.</li>
+  <li>DSH — offered <em>by</em> German universities after arrival / preparatory courses.</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="caveats">
+<h2>11. Caveats &amp; sources</h2>
+
+<ul class="tight">
+  <li><strong>Curated, not exhaustive.</strong> Germany alone has ~400 higher-education institutions;
+  this page lists the major ones and points to the DAAD database for the rest.</li>
+  <li><strong>Tuition figures are as of 2025</strong> and change (TUM's fees are new; other states are
+  debating them). Re-verify on the university's own page.</li>
+  <li><strong>German-taught ≠ automatically free.</strong> Private universities (and now TUM) charge even in Germany.</li>
+  <li><strong>The language certificate is the real gate.</strong> Plan the timeline around reaching C1,
+  not around the admission season.</li>
+  <li>For an Indian applicant: check credential recognition (Anabin/uni-assist) and the DAAD India
+  scholarship pages, which fund German-language study and the Studienkolleg route.</li>
+</ul>
+
+<p class="src">Sources: DAAD International Programmes database · DAAD India · OeAD (Austria) ·
+swissuniversities · TestDaF · Goethe-Institut · ÖSD · telc · Baden-Württemberg non-EU tuition
+(€1,500/sem) · TUM tuition statutes · Andrássy Universität Budapest. Links appear inline above.</p>
+</section>
+
+<footer class="end">
+  <p><strong>Related:</strong> <a href="./index.html">Study app</a> ·
+  <a href="./funded-phd-guide.html">Funded PhD &amp; no-tuition master's guide</a> ·
+  <a href="./funding/index.html">Funding map (65 programmes)</a></p>
+  <p>A general guide to German-taught and English-taught study with a short Sanskrit background. Figures are
+  drawn from official sources; tuition, fees and language requirements change between cycles and must be
+  re-checked before being relied on.</p>
+</footer>
+
+</div>
+</body>
+</html>
