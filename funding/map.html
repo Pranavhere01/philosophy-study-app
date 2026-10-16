@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funding map — every programme on Google Maps</title>
+<style>
+  :root{--ink:#111827;--muted:#6b7280;--rule:#e5e7eb;--bg:#f8fafc;--accent2:#1f4e5f}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  a{color:#1d4ed8;text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  header.top{background:linear-gradient(160deg,#14532d,#1f4e5f);color:#fff;padding:32px 0 26px}
+  header.top h1{margin:0 0 6px;font-size:1.6rem;letter-spacing:-.01em}
+  header.top p{margin:0;color:#cfe0d6;font-size:.95rem}
+  header.top a{color:#cfe0d6;text-decoration:underline}
+  .crumb{font-size:.85rem;color:var(--muted);margin:16px 0 0}
+  .crumb a{color:var(--muted)}
+  .mapwrap{position:relative;border:1px solid #1e293b;border-radius:14px;overflow:hidden;
+    box-shadow:0 18px 50px rgba(0,0,0,.35);margin:18px 0}
+  #map{width:100%;height:min(72vh,640px);background:#0b1220}
+  .gm-style-iw{color:#111}
+  #legend{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0;align-items:center}
+  #legend button{cursor:pointer;border:1px solid #cbd5e1;background:#fff;color:#374151;
+    border-radius:999px;padding:7px 15px;font-size:.84rem;font-weight:600;display:flex;align-items:center;gap:8px}
+  #legend button .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+  #legend button.off{opacity:.35;text-decoration:line-through}
+  #legend .n{color:var(--muted);font-size:.84rem}
+  #list{list-style:none;padding:0;margin:16px 0 40px;display:grid;gap:8px;
+    grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+  #list li{background:#fff;border:1px solid var(--rule);border-radius:9px;padding:10px 13px;font-size:.88rem}
+  #list li a{font-weight:600}
+  #list li small{display:block;color:var(--muted);margin-top:3px}
+  footer.end{margin-top:40px;padding:20px 0;border-top:1px solid var(--rule);font-size:.83rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <h1>Funding map</h1>
+  <p>Every programme plotted on Google Maps — click a pin for the funding in one line, then open the full page. <a href="index.html">Back to all programmes</a></p>
+</div></header>
+
+<div class="wrap">
+  <div class="mapwrap"><div id="map"></div></div>
+
+  <div id="legend">
+    <button data-v="ok"><span class="dot" style="background:#34d399"></span>Funded</button>
+    <button data-v="warn"><span class="dot" style="background:#fbbf24"></span>Partial / conditional</button>
+    <button data-v="bad"><span class="dot" style="background:#f87171"></span>Blocked</button>
+    <span class="n"><b id="shown">0</b> of the programmes shown · pins hide when you toggle a filter</span>
+  </div>
+
+  <ul id="list"></ul>
+
+  <footer class="end">
+    <p>Map data © Google. Programme data compiled 16 October 2026 from official sources; stipends, fees and deadlines change between cycles — confirm on the linked official page before relying on a figure.</p>
+  </footer>
+</div>
+
+<script src="assets/config.js"></script>
+<script src="assets/markers.js"></script>
+<script>
+  (function () {
+    var k = (window.GMAPS_KEY || "").trim();
+    var script = document.createElement("script");
+    var url = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(k) +
+              "&callback=initMap&v=weekly";
+    script.src = url;
+    script.async = true;
+    script.defer = true;
+    script.onerror = function () { window.initMap = window.initMap || function(){}; };
+    document.head.appendChild(script);
+  })();
+</script>
+<script src="assets/map.js"></script>
+</body>
+</html>
