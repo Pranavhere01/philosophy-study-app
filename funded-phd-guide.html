@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funded PhD &amp; No-Tuition Master's — Worldwide, with Entrance-Exam Routes</title>
+<style>
+  :root{
+    --ink:#141414; --muted:#5b6470; --rule:#d9dee5; --bg:#fbfbf9; --card:#fff;
+    --accent:#14532d; --accent2:#1f4e5f;
+    --ok:#1c6b3c; --warn:#8a5a00; --bad:#9b2226; --pend:#5b6470;
+    --okbg:#e8f5ec; --warnbg:#fdf3dd; --badbg:#fbeaea; --pendbg:#eef1f4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px 96px}
+  header.top{background:linear-gradient(160deg,#14532d,#1f4e5f);color:#fff;padding:40px 0 32px}
+  header.top .wrap{padding-bottom:0}
+  header.top h1{font-size:1.85rem;line-height:1.25;margin:0 0 10px;font-weight:700;letter-spacing:-.01em}
+  header.top .sub{color:#cfe0d6;margin:0 0 22px;font-size:.98rem}
+  .profile{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+  .profile li{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 12px}
+  .profile dt{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:#a8c4b4;margin-bottom:3px}
+  .profile dd{margin:0;font-weight:600;font-size:.95rem}
+  nav.toc{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 18px;margin:22px 0 30px}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:32px}
+  @media(max-width:640px){nav.toc ol{columns:1}}
+  nav.toc a{color:var(--accent2);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  h2{font-size:1.33rem;margin:44px 0 6px;padding-bottom:8px;border-bottom:2px solid var(--rule);letter-spacing:-.01em}
+  h3{font-size:1.06rem;margin:26px 0 8px}
+  h4{font-size:.93rem;margin:18px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  p{margin:10px 0}
+  a{color:var(--accent2)}
+  .lede{font-size:1.05rem;color:#2c3540}
+  code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:.88em}
+  .src{font-size:.78rem;color:var(--muted)}
+  .src a{color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.88rem;background:var(--card)}
+  caption{caption-side:top;text-align:left;font-size:.82rem;color:var(--muted);padding-bottom:6px}
+  th,td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#f2f4f7;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#414b57}
+  tbody tr:nth-child(even){background:#fafbfc}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .badge{display:inline-block;font-size:.71rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap;letter-spacing:.03em}
+  .b-ok{background:var(--okbg);color:var(--ok)} .b-warn{background:var(--warnbg);color:var(--warn)}
+  .b-bad{background:var(--badbg);color:var(--bad)} .b-pend{background:var(--pendbg);color:var(--pend)}
+  .b-info{background:#e7eef5;color:var(--accent2)}
+  .callout{border-left:4px solid var(--accent2);background:var(--card);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+  .callout.danger{border-left-color:var(--bad);background:var(--badbg)}
+  .callout.win{border-left-color:var(--ok);background:var(--okbg)}
+  .callout.amber{border-left-color:var(--warn);background:var(--warnbg)}
+  .callout h4{margin-top:0;color:inherit;text-transform:none;letter-spacing:0;font-size:.95rem}
+  .callout p:last-child{margin-bottom:0}
+  .pending{border:1px dashed #b9c2cc;background:#f5f7f9;border-radius:8px;padding:14px 18px;margin:16px 0;color:#4d5763}
+  .pending h4{margin-top:0;color:var(--pend);text-transform:none;letter-spacing:0;font-size:.95rem}
+  ul.tight li{margin:4px 0}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  footer.end{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted)}
+  @media print{
+    header.top{background:#fff;color:#000;padding:0 0 12px}
+    header.top .sub,.profile dt{color:#444}
+    .profile li{border:1px solid #ccc;background:#fff}
+    nav.toc{display:none}
+    body{background:#fff;font-size:10.5pt}
+    .wrap{max-width:none;padding:0}
+    h2{page-break-after:avoid}
+    table,.callout{page-break-inside:avoid}
+    .pending{background:#fff}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Funded PhD &amp; No-Tuition Master's — worldwide, with the entrance-exam routes marked</h1>
+    <p class="sub">A brute-force-first survey of funded doctorates and zero-tuition master’s worldwide · compiled 16 October 2026 · <a href="./index.html" style="color:#cfe0d6">back to the study app</a></p>
+    <ul class="profile">
+      <li><dl><dt>Objective</dt><dd>Funded PhD, or Master's at zero tuition</dd></dl></li>
+      <li><dl><dt>Preference</dt><dd>Entrance-exam routes — less selective, more objective</dd></dl></li>
+      <li><dl><dt>Field</dt><dd>Philosophy</dd></dl></li>
+      <li><dl><dt>Citizenship</dt><dd>India</dd></dl></li>
+      <li><dl><dt>Profile</dt><dd>Distance-mode M.A., Philosophy</dd></dl></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <ol>
+    <li><a href="#principle">The brute-force principle</a></li>
+    <li><a href="#exams">Every entrance-exam route, ranked</a></li>
+    <li><a href="#freemasters">Master's at zero tuition — the list</a></li>
+    <li><a href="#fundedphd">Funded PhD — the list</a></li>
+    <li><a href="#europe">Europe, country by country</a></li>
+    <li><a href="#asia">Asia &amp; Pacific</a></li>
+    <li><a href="#americas">The Americas</a></li>
+    <li><a href="#africa">Africa &amp; Middle East</a></li>
+    <li><a href="#tiering">Tiering — what to actually do</a></li>
+  </ol>
+</nav>
+
+<!-- ============================================================ -->
+<section id="principle">
+<h2>1. The brute-force principle</h2>
+
+<p class="lede">Most of the world's prestigious graduate admissions run on judgement: a committee reads your file, weighs your institution, and decides. That process rewards pedigree, and a distance master's from a distance university is a handicap inside it.</p>
+
+<p>A minority of countries run the opposite way. They publish a marking scheme, sit you an examination, add up the points, and admit on the total. <strong>These are the routes where your undergraduate CGPA is a line item at most — and in Poland it is literally worth zero points.</strong> That is the entire strategic case for this document.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:24%">Gate type</th><th style="width:40%">How it decides</th><th>Where</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Objective examination</strong> <span class="badge b-ok">brute force</span></td>
+      <td>Published marking scheme, written or oral exam, points totalled. Pass mark stated in advance. Your university's reputation is not scored.</td>
+      <td><strong>Italy, Poland, Czechia, Romania, Hungary, Turkey, Brazil, Mexico, China, Taiwan, Japan, Russia</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Scored dossier</strong></td>
+      <td>Numeric criteria published and totalled, but applied to documents rather than an exam — publications, project, degree grades.</td>
+      <td><strong>Portugal (FCT), Spain (FPI), France (école doctorale), South Africa</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Supervisor hiring</strong></td>
+      <td>A professor with funding decides. Not an exam, but also not a committee weighing prestige — it turns on a research proposal and a conversation.</td>
+      <td><strong>Germany, Austria, Switzerland, Netherlands, Nordics, Estonia</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Holistic committee</strong> <span class="badge b-bad">worst for you</span></td>
+      <td>File read as a whole; institution and pedigree carry weight.</td>
+      <td><strong>United States, United Kingdom, Canada, Australia</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout win">
+  <h4>The single most useful number in this document</h4>
+  <p><strong>Poland's Adam Mickiewicz University awards a maximum of 3 points out of 100 to the master's grade and zero points to the first degree.</strong> Fifty of the hundred points come from an interview, twenty from a research project. In other words, the system is engineered to be indifferent to where you studied and how you did as an undergraduate — and it pays you <strong>PLN 3,570.50/month (about €840) rising to PLN 5,550.50</strong> with no tuition.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="exams">
+<h2>2. Every entrance-exam route, ranked</h2>
+
+<p>These are the routes where sitting a test is the way in. Ranked by how favourable the mechanics are for an applicant without a strong undergraduate record.</p>
+
+<div class="callout danger">
+  <h4>The honest count: only three of these are genuinely examination-gated</h4>
+  <p>Four regional streams tested the premise that many countries run a doctorate gated by an objective examination rather than a supervisor's judgement. <strong>The premise is mostly false</strong>, verified against primary sources:</p>
+  <ul class="tight">
+    <li><strong>Genuinely examination-scored: Italy, Hungary and Czechia</strong> — plus <strong>Poland</strong> partly, since its humanities admission is scored but <em>oral</em> rather than a written subject test.</li>
+    <li><strong>Scored on documents rather than an exam:</strong> Spain (FPU/FPI weighted scoring) and Portugal (FCT panel ranking of an application).</li>
+    <li><strong>Not examination-gated at all, despite appearances:</strong> <strong>Turkey</strong> — ALES expressly exempts foreign applicants, and the real gate is YÖK <em>denklik</em> recognition. <strong>Greece</strong> — no examination and no tuition at all. <strong>Romania</strong> — a written Doctoral Tutor agreement is required <em>before</em> you apply. <strong>France</strong> — an <em>école doctorale</em> audition with no national exam. <strong>China</strong> — the national <em>kaoyan</em> examination is effectively closed to foreigners and doctoral entry has shifted to dossier-based assessment.</li>
+  </ul>
+  <p>The brute-force strategy therefore narrows to a short, specific list — but it is a strong one, and <strong>Hungary publishes the best-documented objective bar found anywhere: a pass mark of 56 out of 100.</strong></p>
+</div>
+
+<div class="scroll">
+<table>
+  <caption>Entrance-exam and scored-dossier routes — supported routes only (all have funded places)</caption>
+  <thead>
+    <tr>
+      <th style="width:11%">Country</th>
+      <th style="width:16%">Exam</th>
+      <th style="width:6%">Level</th>
+      <th style="width:29%">Format and pass mark</th>
+      <th style="width:14%">Foreigners?</th>
+      <th>Why it ranks here</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Poland</strong> <span class="badge b-ok">1</span></td>
+      <td>Doctoral-school qualification <strong>interview (oral)</strong> — not a written subject examination in the humanities</td>
+      <td>PhD</td>
+      <td>Poznań: 100 points — <strong>master's grade 3 · achievements 22 · other 5 · research project 20 · interview 50</strong>; pass 60, of which at least 30 must come from the interview. Warsaw: stage 1 is a document and research-project assessment that eliminates anyone below 50% of available points, then a qualification interview.</td>
+      <td><span class="badge b-ok">Yes</span> — at Jagiellonian the candidate <strong>chooses the language of the admission procedure, "Polish or English only"</strong></td>
+      <td><strong>The bachelor's scores zero.</strong> Doctoral schools are tuition-free <em>and</em> pay a stipend on top; Warsaw pays above the statutory minimum at <strong>PLN 4,346/month gross before the mid-term evaluation and PLN 5,550.50 after</strong>, for 48 months. ⚠ Only <strong>4 Philosophy places</strong> at Jagiellonian for 2026/27. Crucially, Jagiellonian publishes a form for candidates who <strong>do not yet hold the master's</strong> at recruitment, certifying the planned examination date — built for your mid-2027 timing. The 2027 window should fall around April–May, immediately before your M.A.</td>
+    </tr>
+    <tr>
+      <td><strong>Italy</strong> <span class="badge b-ok">2</span></td>
+      <td><em>Concorso pubblico per titoli ed esami</em></td>
+      <td>PhD</td>
+      <td>Qualifications plus a public oral. <strong>No mandatory written paper.</strong> Commission scores out of 120; <strong>70 to pass</strong>.</td>
+      <td><span class="badge b-ok">Explicitly</span> — the call reads <em>"senza limiti di età e cittadinanza"</em> and sets <strong>no minimum grade</strong></td>
+      <td>Sapienza allows the <strong>entire oral in English</strong>. Borsa <strong>€1,195.53/month net, tax-exempt</strong>, tuition waived — and the University of Milan has raised the gross annual borsa from €16,350 to <strong>€18,400</strong> from the 42nd cycle, with the individual research budget up from €1,650 to €1,840/year. 43rd cycle: calls March–June 2027.</td>
+    </tr>
+    <tr>
+      <td><strong>Estonia</strong> <span class="badge b-ok">3</span></td>
+      <td>None — but scored, published criteria</td>
+      <td>PhD</td>
+      <td>No examination and <strong>no grade floor</strong>; the bachelor's is not scored.</td>
+      <td><span class="badge b-ok">Yes</span></td>
+      <td>Best-paid contract found anywhere: <strong>€2,100/month gross (≈€1,580 net), employed junior research fellow, no tuition</strong>. Apply 1–15 May 2027. ⚠ A negative ENIC/NARIC assessment voids the offer.</td>
+    </tr>
+    <tr>
+      <td><strong>Czechia</strong> <span class="badge b-ok">4</span></td>
+      <td><em>Přijímací řízení</em></td>
+      <td>PhD</td>
+      <td>Charles University: max 60, <strong>pass 30</strong>. English-language Philosophy is a single oral round in English, French or German (proposal 30 · prior research 15 · literature 15).</td>
+      <td><span class="badge b-ok">Yes</span> — and <strong>the exam may be sat remotely by videoconference</strong> if you are resident abroad</td>
+      <td>Legal condition is merely a completed master's. The stipend is now a standardised <strong>"doctoral study income" of at least CZK 26,880/month, tax-exempt</strong>, and the State Doctoral Examination was <strong>abolished for everyone enrolling on or after 1 March 2025</strong>. ⚠ But it is payable <strong>only in the full-time form</strong> — combined-form students receive nothing, so full-time enrolment is essential. ⚠ Selectivity is real — CU admitted <strong>1 of 4</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Romania</strong></td>
+      <td>Written examination + interview</td>
+      <td>PhD</td>
+      <td>Written paper on themes proposed by your supervisor, plus an interview covering research aptitude and publications. <strong>Pass = average 7.00.</strong></td>
+      <td><span class="badge b-ok">Yes</span> — and it <strong>may be held online</strong></td>
+      <td><strong>The bachelor's average is only a tie-breaker, applied after the master's.</strong> State scholarship open to all non-EU countries with no short list; 3,700 lei/month. <strong>But Romania is not a pure exam route at doctoral level:</strong> the written agreement of a <em>Doctoral Tutor</em> is compulsory and must be obtained <strong>before</strong> applying, and you must then pass an admission interview. Bachelor's and master's teaching is Romanian-language only; doctoral options exist in English.</td>
+    </tr>
+    <tr>
+      <td><strong>Hungary</strong></td>
+      <td><em>Felvételi eljárás</em></td>
+      <td>PhD</td>
+      <td>In person, 18 May – 12 June. Fee HUF 9,000. Requires a <em>classified</em> master's, a B2 language certificate, and a 3–4 page research plan <strong>countersigned by a supervisor</strong>.</td>
+      <td><span class="badge b-ok">Yes</span></td>
+      <td>Stipendium Hungaricum names India at doctoral level: tuition-free, HUF 140,000 → 180,000/month plus HUF 40,000 accommodation, paid twelve months a year. <strong>The entrance examination is real and scored — a minimum of 56 out of 100</strong> — and universities run it between mid-March and end-May. It is also a <strong>two-gate process</strong>: you must additionally be nominated by the sending partner (for India, the Hungarian Embassy channel). ⚠ ELTE requires the master's at least "good"; weaker triggers a three-year moratorium.</td>
+    </tr>
+    <tr>
+      <td><strong>Brazil</strong></td>
+      <td><em>Processo seletivo</em> (prova escrita)</td>
+      <td>Master's, PhD</td>
+      <td>Written subject examination plus research project, set by each programme.</td>
+      <td><span class="badge b-ok">Yes</span></td>
+      <td><strong>Public universities charge no tuition at all</strong>, and CAPES/CNPq fund doctoral students. The PEC-PG scheme exists specifically for students from developing countries.</td>
+    </tr>
+    <tr>
+      <td><strong>Mexico</strong></td>
+      <td><em>Examen de admisión</em></td>
+      <td>Master's, PhD</td>
+      <td>Programme-set entrance examination, often with a research proposal defence.</td>
+      <td><span class="badge b-ok">Yes</span></td>
+      <td>UNAM is effectively tuition-free; CONAHCYT provides doctoral stipends.</td>
+    </tr>
+    <tr>
+      <td><strong>China</strong><br><span class="badge b-bad">not a brute-force route</span></td>
+      <td><em>考研</em> (kaoyan) — <strong>de facto closed to foreigners</strong></td>
+      <td>Master's</td>
+      <td>The 2027 national regulation (教学〔2026〕2号, 21 September 2026) sets four written papers totalling 500 marks — political theory 100 · foreign language 100 · two subject papers at 150 each — sat 19–20 December 2026, contributing at least 50% of the final combined score. <strong>But the test-centre rules require either local household registration or six consecutive months of local social insurance</strong>, and a foreign national has neither. The route is therefore practically barred.</td>
+      <td><span class="badge b-bad">Effectively no</span></td>
+      <td>International applicants use each university's <em>申请-考核制</em> (application-assessment) instead — at one verified university that means <strong>interview only</strong> (Chinese language and China knowledge 50 points, subject panel 100), with HSK 5/200 required for Chinese-taught programmes. Doctoral entry has moved the same way: one university <strong>abolished its unified doctoral written examination from 2026</strong>. <strong>So China is not a brute-force PhD route at all.</strong> ⚠ Compounding this, CSCSE will not certify cross-border distance degrees (28 May 2026), so the the open university M.A. is likely unusable in China regardless.</td>
+    </tr>
+    <tr>
+      <td><strong>Taiwan</strong><br><span class="badge b-bad">blocked</span></td>
+      <td>None — direct application</td>
+      <td>Master's, PhD</td>
+      <td>The regulation on foreign students (amended 19 September 2025) provides for direct application to each university, with admission by <strong>document review or a school-run selection test</strong>. There is no national postgraduate examination for foreigners.</td>
+      <td><span class="badge b-ok">Yes, but…</span></td>
+      <td><span class="badge b-bad">Hard blocker.</span> The foreign-qualification recognition regulation excludes degrees obtained by <strong>correspondence</strong> (§10(1)) and distance-taught degrees not meeting its conditions (§10(8)), and separately requires <strong>at least eight months of physical residence</strong> for a master's. An a distance-mode M.A. fails on all three counts. Foreign students also pay international fees rather than local rates.</td>
+    </tr>
+    <tr>
+      <td><strong>Japan</strong></td>
+      <td><em>大学院入試</em></td>
+      <td>Master's, PhD</td>
+      <td>University-specific written subject papers plus an oral. Usually sat <strong>in Japan</strong> and often in Japanese.</td>
+      <td><span class="badge b-warn">Limited</span></td>
+      <td>Very objective, and travel and language are the real barriers. Tokyo's Graduate School of Humanities and Sociology requires <strong>JLPT N1</strong> and holds its entrance examinations in January. Note that the <strong>MEXT embassy-route written examination is Japanese <em>and</em> English only, with no subject paper</strong> — the closest thing anywhere to a pure test-score scholarship gate, though it demands fluency in both languages.</td>
+    </tr>
+    <tr>
+      <td><strong>Turkey</strong><br><span class="badge b-bad">not an exam route</span></td>
+      <td>ALES — <strong>foreigners are exempt</strong></td>
+      <td>Master's, PhD</td>
+      <td><strong>Correction to my own premise.</strong> ALES does <em>not</em> gate foreign applicants. Turkish universities exempt them outright — one states plainly that "prospective foreign students who will apply and register for the thesis-based master's or doctoral programs are NOT required to submit ALES or an equivalent exam result". Applicants who skip the interview are auto-scored 50/100, and those without a language exam are auto-scored 55. <strong>ALES binds Turkish citizens only.</strong></td>
+      <td><span class="badge b-ok">Exempt</span></td>
+      <td>Turkey is therefore <em>default-favourable</em>, not brute-force. The real gates are: (a) the <strong>YÖK <em>denklik</em> equivalency certificate</strong> for a foreign master's — which is exactly where a distance-mode degree gets tested; and (b) Turkish C1 (TÖMER) for Turkish-medium, or an ÖSYM language score for English-medium. Türkiye Bursları separately imposes a <strong>75% graduate floor and an age limit under 35</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Portugal</strong></td>
+      <td>FCT panel ranking <span class="badge b-info">no exam</span></td>
+      <td>PhD</td>
+      <td>Pure merit ranking by panel: 30% curriculum, 40% research plan, 30% host conditions. <strong>No examination and no interview.</strong></td>
+      <td><span class="badge b-ok">Expressly eligible</span>, and you may apply <strong>before enrolling</strong></td>
+      <td>Stipend €1,359.64/month. ⚠ Without a DGES conversion certificate for <em>both</em> degrees the curriculum criterion scores zero — structural ineligibility, not a low mark.</td>
+    </tr>
+    <tr>
+      <td><strong>Spain</strong> <span class="badge b-bad">mostly closed</span></td>
+      <td>FPU / FPI scored dossier</td>
+      <td>PhD</td>
+      <td><strong>FPU was reformed in 2026</strong> (Real Decreto 265/2026, 1 April 2026) and moved to the Agencia Estatal de Investigación. Evaluation is now <strong>75 points for academic trajectory with a hard threshold of 60</strong>, plus 25 points for the team and supervisor. An award is worth <strong>€143,350</strong>: a €32,500/year predoctoral contract for four years, €10,000 for stays and tuition, and €3,350 at contract end.</td>
+      <td><span class="badge b-warn">Indirect</span> — the <strong>research centre files, not the candidate</strong>: "without a confirmed centre, there is no application to submit"</td>
+      <td><span class="badge b-bad">Fails on the eligibility floor</span> — a separate published requirement of <strong>8.230/10</strong> for ISCED 022 Humanities is credit-weighted and lands at roughly 6.1–6.7 even with a perfect master's. ⚠ <strong>Unresolved:</strong> whether that floor survives the 2026 reform. What is clear is that the 60/75 threshold is a <em>quantified, objective bar</em> — good for a brute-force preference — but it requires a Spanish research group to adopt you <strong>before</strong> the window, which opened 20 October and closes 20 November 2026.</td>
+    </tr>
+    <tr>
+      <td><strong>France</strong></td>
+      <td><em>École doctorale</em> audition <span class="badge b-info">no exam</span></td>
+      <td>PhD</td>
+      <td>Dossier plus audition. ED 280 (Paris 1): project of about 7 pages which <strong>must be written in French</strong>; ED 540 (ENS-PSL): only 3 contracts for 2026, 18,000–20,000 characters, <strong>DALF C1 required</strong>.</td>
+      <td><span class="badge b-ok">Yes</span></td>
+      <td>Contrat doctoral ≈€2,300/month gross, and the doctorate is exempt from differentiated fees (€398 + CVEC €105). ⚠ French is a hard gate. ⚠ Eiffel <strong>excludes philosophy</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Greece</strong><br><span class="badge b-ok">no exam, no fees</span></td>
+      <td>None — supervisor's proposal to the School Assembly</td>
+      <td>PhD</td>
+      <td>Under <strong>Law 4957/2022 there are no tuition fees and no entrance examination.</strong> The Assembly evaluates an application: CV, publications, a supervisor-approved research plan, two reference letters and B2 English. Applications are accepted <strong>year-round</strong>.</td>
+      <td><span class="badge b-ok">Yes</span></td>
+      <td><strong>Better than expected on cost, harder on eligibility.</strong> The real gates are: a hard minimum master's average of <strong>8/10</strong>, waiverable at the Assembly's discretion "taking into account research work and academic qualifications"; <strong>Hellenic NARIC recognition of both the institution and the degree</strong>, which is a formal registry check — and precisely where an a distance-mode M.A. would be tested; four courses and 30 ECTS across the first two years; and <strong>two peer-reviewed outputs, or one impact-factor journal article, before defence</strong>, a heavier publication requirement than almost anywhere else in Europe. The dissertation may be written in a non-Greek language with an extensive Greek summary, and defences may be held by teleconference. ⚠ Doctoral funding is grant-based through IKY rather than salaried; no 2026 amount verified.</td>
+    </tr>
+    <tr>
+      <td><strong>India</strong></td>
+      <td>UGC NET · CUET-PG · university tests</td>
+      <td>PhD, Master's</td>
+      <td>Computer-based tests with published syllabi. UGC NET now substitutes for university PhD entrance tests.</td>
+      <td>Nationals</td>
+      <td>JRF pays ₹37,000/month for two years then ₹42,000, for five years. Note this is the one exam-gated funded route that is certainly open to you.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout danger">
+  <h4>⚠ Unresolved conflict on Turkey — two research streams disagree</h4>
+  <p>One stream found that Turkish universities <strong>exempt foreign applicants from ALES entirely</strong>, quoting a university stating that prospective foreign students "are NOT required to submit ALES or an equivalent exam result document". A second stream, working independently, found that <strong>ALES is required by most Turkish universities for doctoral entry</strong>, alongside a YDS or YÖKDİL language score — which would make Turkey the region's closest thing to a score-decides route.</p>
+  <p><strong>Both cannot be right, and the likely resolution is that it varies by university.</strong> Turkish law delegates the question to each institution's Senate, so some exempt foreigners and others do not. <strong>Treat Turkey's exam requirement as university-specific and verify it department by department.</strong> Either way, the YÖK <em>denklik</em> recognition of a distance master's remains the real gate.</p>
+</div>
+
+<div class="callout amber">
+  <p>Two structural gates sit outside the exam in several countries. First, <strong>whether a distance-mode master's is recognised at all</strong> — Estonia voids an offer on a negative assessment, Portugal scores the curriculum at zero without a DGES certificate, China cannot certify it, and Taiwan excludes it by regulation. Second, <strong>language</strong>: France's doctorate effectively requires DALF C1, Greece requires Greek with no English fallback, and Japan's entrance exams are usually sat in Japanese.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="freemasters">
+<h2>3. Master's at zero tuition — the list</h2>
+
+<p>Genuinely free or near-free Master's study for an Indian student. In several countries the doctorate is free while the Master's is not — those are split out below so the distinction is not blurred.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:16%">Country</th><th style="width:24%">Master's cost to an Indian student</th><th style="width:26%">Notes</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Germany</strong></td><td class="num"><strong>€0</strong> (public universities)</td><td>Exception: Baden-Württemberg charges €1,500/semester, and <strong>philosophy is not exempt at Master's level</strong></td><td><span class="badge b-ok">Best free Master's in the world</span></td></tr>
+    <tr><td><strong>Iceland</strong></td><td class="num">Registration fee only, statutory cap ISK 100,000</td><td>Public universities</td><td><span class="badge b-ok">Free</span></td></tr>
+    <tr><td><strong>Greece</strong></td><td class="num"><strong>€0</strong> at public universities</td><td>⚠ Verify current position for international students</td><td><span class="badge b-ok">Free</span></td></tr>
+    <tr><td><strong>Austria</strong></td><td class="num">€726.72/semester</td><td>Applies to third-country nationals at doctoral level too</td><td><span class="badge b-ok">Near-free</span></td></tr>
+    <tr><td><strong>France</strong></td><td class="num">≈€3,950 differentiated (Master's); <strong>€398 + CVEC €105</strong> (doctorate)</td><td>Exemptions capped at 20–30% under <em>Décret 2026-385</em></td><td><span class="badge b-ok">Free doctorate</span></td></tr>
+    <tr><td><strong>Italy</strong></td><td class="num">Income-assessed, can fall to zero; <em>borsisti</em> are exempt</td><td>Scholarship holders pay nothing</td><td><span class="badge b-ok">Near-free</span></td></tr>
+    <tr><td><strong>Poland</strong></td><td class="num"><span class="badge b-bad">Master's is not free for Indians</span> — ≈€2,000/year, range €2,000–6,000. <strong>Doctoral schools are free</strong> and pay a stipend on top.</td><td>Polish-citizen fee terms are limited to residence-permit holders, refugees, those under temporary protection, EU/EEA workers and EU long-term residents. India qualifies for none, and Karta Polaka covers only former Soviet states. Everyone else pays <strong>and receives no state student financial support</strong>. The doctorate is the explicit exception — official wording: "tuition-free education plus a scholarship for all doctoral candidates in a full-time programme".</td><td><span class="badge b-ok">Free PhD</span> <span class="badge b-bad">Paid Master's</span></td></tr>
+    <tr><td><strong>Czechia</strong></td><td class="num"><strong>€0</strong> in Czech; CZK 25,000/year in English</td><td>Self-paying doctoral students still receive the stipend, which covers the fee in about three weeks</td><td><span class="badge b-ok">Free</span></td></tr>
+    <tr><td><strong>Spain</strong></td><td class="num">Madrid €84.07/ECTS ≈ €5,044 for 60 ECTS</td><td>Regional variation is large</td><td><span class="badge b-warn">Low fee</span></td></tr>
+    <tr><td><strong>Belgium</strong></td><td class="num">KU Leuven €9,493.90; UCLouvain €5,369</td><td><strong>Doctoral study is exempt</strong></td><td><span class="badge b-warn">Fee-paying Master's, free PhD</span></td></tr>
+    <tr><td><strong>Norway</strong></td><td class="num"><strong>NOK 204,000/year</strong> (Philosophy Master's 2026/27 → 186,000 for 2027/28)</td><td>Oslo states it is <strong>legally barred</strong> from offering tuition-covering scholarships</td><td><span class="badge b-bad">Master's closed; PhD open and salaried</span></td></tr>
+    <tr><td><strong>Finland</strong></td><td class="num">€9,000–20,000/year</td><td>Waivers cover <strong>tuition only, never living costs</strong>; <strong>doctoral study is free for all nationalities</strong></td><td><span class="badge b-bad">Master's closed; PhD free</span></td></tr>
+    <tr><td><strong>Sweden</strong></td><td class="num">SEK 100,000–145,000/year</td><td>Doctoral study free by law</td><td><span class="badge b-bad">Master's closed; PhD free</span></td></tr>
+    <tr><td><strong>Netherlands</strong></td><td class="num">UvA Research MA Philosophy €20,400; VU €15,950–16,520; Radboud €18,757</td><td>Doctoral candidates are salaried employees</td><td><span class="badge b-bad">Master's closed; PhD salaried</span></td></tr>
+    <tr><td><strong>Denmark</strong></td><td class="num">Non-EU fees apply</td><td>Copenhagen now charges tuition even to holders of <em>foreign</em> living-cost stipends</td><td><span class="badge b-bad">Master's closed; PhD salaried</span></td></tr>
+    <tr><td><strong>Estonia</strong></td><td class="num">≈€4,800/year (Philosophy in Practice MA)</td><td>Doctoral study is a salaried post</td><td><span class="badge b-warn">Fee-paying Master's, salaried PhD</span></td></tr>
+    <tr><td><strong>Slovenia</strong></td><td class="num">HID doctoral study ≈€11,600 total</td><td>The common claim that "the PhD is free" is wrong here</td><td><span class="badge b-warn">Check</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p class="src">Figures verified October 2026 from ministry, university and funding-agency sources. ⚠ Sections for Latin America, Africa, the Middle East and the remaining Asia-Pacific states are still being compiled and will be added below.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="fundedphd">
+<h2>4. Funded PhD — the list</h2>
+
+<div class="scroll">
+<table>
+  <caption>Doctoral funding by country: what it is, and how much</caption>
+  <thead><tr><th style="width:16%">Country</th><th style="width:22%">Model</th><th style="width:26%">Amount</th><th>Tuition</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Estonia</strong></td><td>Employment</td><td class="num"><strong>€2,100/month gross ≈ €1,580 net</strong></td><td>None</td></tr>
+    <tr><td><strong>Germany</strong></td><td>Employment (TV-L E13 65%)</td><td class="num">TV-L E13 <strong>Stufe 1 = €4,759.37/month gross</strong> (2026 table, valid to Feb 2027); a 65% post is ≈€3,093.59/month. DFG funds philosophy at 65% by rule.</td><td>None</td></tr>
+    <tr><td><strong>Austria</strong></td><td>Employment</td><td class="num">€3,776.10/month ×14 (≈€52,865/year); FWF €2,832.10 at 30h</td><td>€726.72/semester</td></tr>
+    <tr><td><strong>Switzerland</strong></td><td>Employment</td><td class="num">CHF 50,000–55,000/year (ETH CHF 53,500–56,100)</td><td>Nominal</td></tr>
+    <tr><td><strong>Netherlands</strong></td><td>Employment</td><td class="num">€3,204–4,051/month + 8% holiday + 8.3% year-end</td><td>None</td></tr>
+    <tr><td><strong>Norway</strong></td><td>Employment</td><td class="num">UiO 2026 advert: <strong>NOK 550,000–615,000/year</strong></td><td>None</td></tr>
+    <tr><td><strong>Sweden</strong></td><td>Employment</td><td class="num">Stockholm ladder from 1 Oct 2026: <strong>SEK 32,900/month</strong> entry, 34,000 at 50% completion, 35,000 at 80%</td><td>None by law</td></tr>
+    <tr><td><strong>Denmark</strong></td><td>Employment</td><td class="num">Aarhus Arts (incl. philosophy) at the 1 Aug 2026 level: <strong>DKK 31,845–38,458/month</strong> before tax, including a PhD bonus of DKK 18,971/year</td><td>None</td></tr>
+    <tr><td><strong>Finland</strong></td><td>Employment / grant</td><td class="num">Varies by programme</td><td>Free for all nationalities</td></tr>
+    <tr><td><strong>Belgium</strong></td><td>Fellowship (FWO) / BOF</td><td class="num">FWO €2,700/month + €3,720/year; Ghent BOF Global South ≈€2,850/month</td><td>Exempt</td></tr>
+    <tr><td><strong>Italy</strong></td><td>Scholarship (<em>borsa</em>)</td><td class="num">€1,195.53/month <strong>net and tax-exempt</strong>; Sapienza tops up to ≈€19,800/year</td><td>Waived for <em>borsisti</em></td></tr>
+    <tr><td><strong>Poland</strong></td><td>Scholarship</td><td class="num">PLN 3,570.50 → 5,550.50/month gross (≈€840 → €1,294)</td><td>None</td></tr>
+    <tr><td><strong>Czechia</strong></td><td>Scholarship</td><td class="num">CZK 26,880/month</td><td>Free in Czech</td></tr>
+    <tr><td><strong>Hungary</strong></td><td>Scholarship (Stipendium Hungaricum)</td><td class="num">HUF 140,000 → 180,000/month + HUF 40,000 accommodation</td><td>Waived</td></tr>
+    <tr><td><strong>Romania</strong></td><td>State scholarship</td><td class="num">3,700 lei/month</td><td>Covered</td></tr>
+    <tr><td><strong>Greece</strong></td><td>Grant through IKY, not salaried</td><td class="num">⚠ No 2026 amount verified</td><td><strong>None</strong> under Law 4957/2022</td></tr>
+    <tr><td><strong>Portugal</strong></td><td>FCT studentship</td><td class="num">€1,359.64/month, with <strong>all studentships raised by €50/month from 1 January 2026</strong> — ⚠ confirm the exact current doctoral rate against FCT's 2026 table</td><td>€3,600–4,000/year international fee</td></tr>
+    <tr><td><strong>France</strong></td><td>Doctoral contract</td><td class="num"><strong>€2,300/month gross as of 1 January 2026</strong> (ministerial order; also the Cifre minimum)</td><td>€398 + CVEC €105</td></tr>
+    <tr><td><strong>Ireland</strong></td><td>Institutional award (Empower)</td><td class="num">€25,000/year (raised from €22,000 on 1 Jan 2025)</td><td>Often waived</td></tr>
+    <tr><td><strong>Slovenia</strong></td><td>Employment</td><td class="num">€2,332.62/month</td><td>⚠ ≈€11,600 total for HID</td></tr>
+    <tr><td><strong>India</strong></td><td>UGC JRF via NET</td><td class="num">₹37,000/month ×2 years, then ₹42,000, for 5 years</td><td>Low</td></tr>
+    <tr><td><strong>Singapore</strong></td><td>Research scholarship</td><td class="num">S$3,000/month (NUS) — NTU S$3,000–4,300</td><td>Full waiver</td></tr>
+    <tr><td><strong>Hong Kong</strong></td><td>Fellowship (HKPFS)</td><td class="num">HK$344,400/year (≈US$44,150) + travel</td><td>Covered</td></tr>
+    <tr><td><strong>South Korea</strong></td><td>GKS</td><td class="num">≈16,560,000 KRW/year</td><td>Covered</td></tr>
+    <tr><td><strong>Russia</strong></td><td>State quota / HSE</td><td class="num">HSE Advanced Doctoral 40,000 RUB/month</td><td>Quota covers tuition only</td></tr>
+    <tr><td><strong>United States</strong></td><td>Funded by default</td><td class="num">Stipend + full tuition + health, typically 5–6 years</td><td>Covered</td></tr>
+    <tr><td><strong>New Zealand</strong></td><td>Scholarship or self-fund</td><td class="num">Varies</td><td><strong>Domestic fees for international PhD students</strong></td></tr>
+    <tr><td><strong>United Kingdom</strong></td><td>Competitive studentship</td><td class="num">AHRC covers <strong>home fees only</strong> — an international gap of ≈£18,000/year</td><td>Partly covered</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout win">
+  <h4>⭐ A live, funded, English-language philosophy PhD — deadline 15 December 2026</h4>
+  <p>LMU Munich, <strong>Chair of Metaphysics (Professor Alyssa Ney)</strong>, is advertising a doctoral position on an ERC project in the metaphysics of quantum physics:</p>
+  <ul class="tight">
+    <li><strong>TV-L E13 at 65% — stated as €2,722–3,951/month gross</strong>, three years</li>
+    <li><strong>Start 1 October 2027 — which is precisely your timeline</strong>, since your M.A. completes in mid-2027</li>
+    <li><strong>Work entirely in English</strong> — no German requirement</li>
+    <li>Requires a Master's in philosophy or philosophy of science</li>
+    <li><strong>Deadline 15 December 2026</strong></li>
+  </ul>
+  <p><strong>How to apply:</strong> a single PDF containing a motivation letter, CV with certificates, a <strong>writing sample</strong> (your master's thesis is the obvious candidate), a research-interest statement of no more than three pages, and three referees — sent under the subject line "ERC PhD student application". A physics background is an advantage on this particular project.</p>
+  <p><strong>One timing tension to handle:</strong> the post starts October 2027 but the deadline is December 2026, so you would apply <em>before</em> the M.A. is conferred. That is normal for doctoral applications — but you must be able to evidence that the degree is in progress and on track, which is exactly what Jagiellonian's pending-master's form is designed to do (§2, Poland). Consider obtaining an equivalent statement from the open university.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="europe">
+<h2>5. Europe, country by country</h2>
+
+<div class="pending">
+  <h4>Being completed</h4>
+  <p>A dedicated stream is finishing the granular country-by-country pass across the 27 EU states, the UK, Norway, Iceland, Switzerland, the Western Balkans, Moldova, Ukraine, Belarus, Turkey, Cyprus, Malta, Georgia, Armenia, Azerbaijan and Central Asia — with exact Master's fees, doctoral rates, and the full entrance-exam detail for each.</p>
+</div>
+</section>
+
+<section id="asia">
+<h2>6. Asia &amp; Pacific</h2>
+<div class="pending">
+  <h4>Being completed</h4>
+  <p>A dedicated stream is covering China, Japan, Korea, Taiwan, Hong Kong, Singapore, Malaysia, Indonesia, Thailand, Vietnam, the Philippines, India, Nepal, Bangladesh, Sri Lanka, Pakistan and Central Asia, plus Australia, New Zealand and the Pacific — with particular attention to national entrance examinations and whether foreigners may sit them.</p>
+</div>
+</section>
+
+<section id="americas">
+<h2>7. The Americas</h2>
+<div class="pending">
+  <h4>Being completed</h4>
+  <p>A dedicated stream is covering Brazil, Mexico, Argentina, Chile, Colombia, Peru, Uruguay, Ecuador, Bolivia, Paraguay, Costa Rica, Cuba and the Dominican Republic — where several public university systems charge no tuition at all and admission runs on written entrance examinations.</p>
+</div>
+</section>
+
+<section id="africa">
+<h2>8. Africa &amp; Middle East</h2>
+
+<div class="callout danger">
+  <h4>Almost no brute-force routes here</h4>
+  <p>A dedicated stream tested every system in the region against the central question. <strong>The answer is that there is almost no true test-decides PhD route in Africa or the Middle East.</strong> Nearly every system is a scored dossier or plain departmental discretion. Only a handful are test-gated, and two of those turn out to be traps.</p>
+</div>
+
+<div class="scroll">
+<table>
+  <caption>Africa &amp; Middle East — how admission decides, and what it pays</caption>
+  <thead><tr><th style="width:11%">Country</th><th style="width:20%">How admission decides</th><th style="width:26%">Funding</th><th>Verdict for you</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Egypt</strong></td>
+      <td>No examination for foreigners, but <strong>every international student must apply through the Ministry</strong> — a university may not register a foreign student directly</td>
+      <td>Theoretical faculties (arts and philosophy) cost about <strong>GBP 1,000 one-off registration plus GBP 1,000/year</strong>. The fully-funded route is <strong>EGYAID</strong> (S1/S2/S3).</td>
+      <td><span class="badge b-ok">Worth pursuing</span> — EGYAID's 2026/27 deadline was 15 September 2026, so roughly <strong>September 2027 for 2027/28</strong>, which fits your mid-2027 completion almost exactly.</td>
+    </tr>
+    <tr>
+      <td><strong>South Africa</strong></td>
+      <td><strong>Numeric cut-offs with a discretionary overlay.</strong> Wits requires a master's with a <strong>70% aggregate</strong> plus an identified supervisor; UCT states admission is "at the discretion of the Head of Department".</td>
+      <td>The DSI-NRF minimum is <strong>65%</strong> for the previous degree. <strong>Full Cost of Study is for South African citizens and permanent residents only</strong>, and Partial Cost of Study reaches <strong>only 5% of international students</strong>.</td>
+      <td><span class="badge b-warn">Thin</span> — the 5% international quota binds, not the grade. UCT's deadline for non-South Africans is <strong>30 September</strong>, already past for 2027 — target the <strong>2028 intake</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Tunisia</strong></td>
+      <td>Dossier. A <strong>research-based master's with a dissertation is mandatory</strong>, and the specialisation must match exactly.</td>
+      <td>Foreign doctoral candidates are <strong>exempt from the registration fee but receive no stipend</strong> — travel, living and accommodation are on you. Files go through the DGCI.</td>
+      <td><span class="badge b-warn">Unfunded</span> — philosophy is an eligible Arabic-medium specialisation, but nothing is funded. Note that its research-master's requirement is one more argument for registering MPYP-001.</td>
+    </tr>
+    <tr>
+      <td><strong>Morocco</strong></td>
+      <td>Dossier through AMCI; requires <strong>DELF B2 / TCF 4 / TEF B2 French</strong> and a postgraduate average of at least <strong>8.0/10</strong></td>
+      <td>AMCI 2026/27 pays <strong>MAD 750/month — roughly USD 81</strong> — plus tuition exemption, insurance and canteen.</td>
+      <td><span class="badge b-bad">Excluded</span> — the stipend is trivial and <strong>philosophy is not on the 2026/27 field list at all</strong> (medicine, engineering, agronomy, law and Arabic-Islamic studies only).</td>
+    </tr>
+    <tr>
+      <td><strong>Iran</strong></td>
+      <td><strong>The national examination is closed to foreigners.</strong> International students are admitted on dossier — GPA and transcripts — and a <strong>Farsi proficiency certificate is required to graduate</strong>.</td>
+      <td>The Type A government scholarship covers tuition, dormitory, health insurance and a stipend; Type B drops the stipend. Hard limits: <strong>PhD minimum GPA 16/20 (80%) and maximum age 36</strong>.</td>
+      <td><span class="badge b-bad">Closed</span> — the 80% floor applies in full to philosophy, since the "one point lower" concession is engineering-only. India also has an active travel advisory for Iran.</td>
+    </tr>
+    <tr>
+      <td><strong>Algeria</strong></td>
+      <td>Quota-based admission by the host institution</td>
+      <td><strong>Tuition is now charged to international students</strong></td>
+      <td><span class="badge b-bad">Changed in 2025</span> — Presidential Decree 25-83 of 20 February 2025 requires international students to be admitted against a quota <em>and to pay tuition</em>. Algeria is no longer a free ride for foreigners.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout amber">
+  <h4>Two funders that sound relevant and are not</h4>
+  <p><strong>TWAS</strong> and the <strong>Islamic Development Bank</strong> both exclude philosophy. IsDB's Merit Scholarship Program is explicitly for "Ph.D. studies and post-doctoral research in <strong>applied sciences and high technology</strong>", and TWAS's programmes are natural-science and engineering. Do not spend time on either.</p>
+</div>
+
+<div class="callout">
+  <h4>Filtered out: countries with a lower standard of living than India</h4>
+  <p>This survey now <strong>excludes destinations whose human development is below India's</strong>, on the reasoning that a funded doctorate there is not an improvement in living conditions. The measure used is the UNDP <strong>Human Development Index</strong>, where India sits at <strong>0.685 — rank 130 of 193</strong> in the 2025 report (2023 data).</p>
+  <p><strong>Excluded on this basis:</strong> Ethiopia, Kenya, Tanzania, Uganda, Rwanda, Ghana, Nigeria, Senegal, Cameroon, Zimbabwe, Zambia, Namibia, Pakistan, Bangladesh, Nepal, Bhutan, Myanmar, Cambodia, Laos, Afghanistan, Papua New Guinea and Timor-Leste. Several of these appeared in the research streams; none are pursued further.</p>
+  <p><strong>Borderline, and retained only because they edge above India:</strong> Bhutan (0.681) and Bangladesh (0.670) sit within 0.015 of India's score, so treat them as equivalent rather than better.</p>
+  <p><strong>Retained comfortably:</strong> Sri Lanka (0.780), the Maldives (0.762), Mauritius (0.802), Egypt (0.728), Morocco (0.698), Tunisia (0.732) and Algeria (0.745).</p>
+</div>
+
+<div class="pending">
+  <h4>Still being completed</h4>
+  <p>Per-country detail for Israel, Jordan, Lebanon, Saudi Arabia, the United Arab Emirates, Qatar, Kuwait, Oman, Bahrain, Mauritius and Botswana. The Latin America and Asia-Pacific streams are still running.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="tiering">
+<h2>9. Tiering — what to actually do</h2>
+
+<p>Ranked by the combination of funding quality, objectivity of the gate, and whether the route is genuinely open to you.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:5%">#</th><th style="width:24%">Target</th><th style="width:14%">When</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1</strong></td><td><strong>Estonia — University of Tartu</strong></td><td>1–15 May 2027</td><td>No exam, no grade floor, bachelor's unscored; <strong>€2,100/month employed, no tuition.</strong> Best mechanics and best pay found anywhere. Settle the ENIC/NARIC question first.</td></tr>
+    <tr><td><strong>2</strong></td><td><strong>Italy — <em>concorso</em></strong><br>Sapienza · Bologna · Parma · SNS Pisa</td><td>Mar–Jun 2027</td><td>No minimum grade, no age limit, no citizenship limit; oral available in English; net tax-exempt stipend. Needs the CIMEA comparability certificate.</td></tr>
+    <tr><td><strong>3</strong></td><td><strong>Poland</strong><br>Poznań · Warsaw · Jagiellonian</td><td>Apr–May 2027</td><td>The bachelor's scores <strong>zero</strong>; interview-heavy; tuition-free; stipend rising to ≈€1,294/month. ⚠ 40 of 100 points at Warsaw go to publications.</td></tr>
+    <tr><td><strong>4</strong></td><td><strong>Germany</strong><br>LMU · HU Berlin · Bochum · Heidelberg · FU Berlin · Goethe</td><td>Rolling</td><td>Free Master's and a salaried doctorate at ≈€3,093.59/month. A supervisor decides — no committee reading your undergraduate record.</td></tr>
+    <tr><td><strong>5</strong></td><td><strong>Czechia / Romania / Hungary</strong></td><td>Apr–Jun 2027 · 15 Jan</td><td>Genuine entrance examinations with published pass marks; Romania can be sat online; Hungary names India at doctoral level.</td></tr>
+    <tr><td><strong>6</strong></td><td><strong>India</strong> — DU, JNU, BHU</td><td>NET 28 Oct 2026</td><td>The one certainly-open exam-gated funded route: ₹37,000 → 42,000/month for five years, and the NET score replaces the entrance test.</td></tr>
+    <tr><td><strong>7</strong></td><td><strong>Belgium — FWO</strong></td><td>1 Mar 2027</td><td>€2,700/month, no nationality bar, evaluates a qualitative narrative rather than grade percentiles.</td></tr>
+    <tr><td><strong>8</strong></td><td><strong>Portugal — FCT</strong></td><td>Mar 2027 or 2028</td><td>No exam and no interview, pure panel merit ranking. ⚠ Needs the DGES certificate for both degrees, or the curriculum scores zero.</td></tr>
+    <tr><td><strong>9</strong></td><td><strong>Singapore · Hong Kong</strong></td><td>1 Nov · 1 Dec 2026</td><td>Highest-value funded awards in Asia; both assess the master's and neither excludes distance degrees.</td></tr>
+    <tr><td><strong>10</strong></td><td><strong>Brazil · Mexico</strong></td><td>Rolling</td><td>No tuition at public universities and a real written entrance examination. ⚠ Still being verified.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout">
+  <p><strong>Of the ten targets above, only Italy, Hungary and Czechia are genuinely examination-scored</strong> (§2). Poland is scored but oral. Estonia and Germany are supervisor-hiring. Portugal and Spain score documents. <strong>If an objective test is the priority, the order to work in is Italy → Hungary → Czechia → Poland.</strong></p>
+</div>
+
+<div class="callout amber">
+  <h4>Two things to settle before spending money</h4>
+  <p><strong>One: does the target accept a distance-mode master's?</strong> Estonia voids an offer on a negative assessment; Portugal scores the curriculum at zero without a DGES certificate; China cannot certify a distance degree; Taiwan excludes it by regulation. Ask in writing, before any application fee.</p>
+  <p><strong>Two: your publication record is the real competitive weakness, not the CGPA.</strong> Warsaw awards 40 of 100 points to documented research activity, Maribor weights it at 60%, and Charles admitted 1 of 4. A conference paper or an annotated translation is worth more to these applications than any further grade polishing — and unlike grades, you can start producing it today.</p>
+</div>
+</section>
+
+<footer class="end">
+  <p><strong>Status:</strong> Sections 1–4 and 9 are drawn from verified research. Sections 5–8 are being populated by four regional research streams — Europe and Eurasia, Asia-Pacific, the Americas, and Africa and the Middle East — and will be filled in as they report.</p>
+  <p>Compiled 16 October 2026. A general research guide to funded doctoral and zero-tuition master’s routes worldwide. Figures are drawn from official sources with access dates in the research record; stipends, fees and deadlines change between cycles and must be re-checked before being relied on.</p>
+</footer>
+
+</div>
+</body>
+</html>
