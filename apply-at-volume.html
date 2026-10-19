@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Top-of-funnel playbook: apply at volume to every minimally-eligible funded philosophy PhD — Germany, the English-speaking world, and everywhere English, German or Hindi suffices.">
+<title>Top-of-funnel · funded philosophy PhD — apply at volume</title>
+<style>
+  :root{
+    --ink:#141414; --muted:#5b6470; --rule:#d9dee5; --bg:#fbfbf9; --card:#fff;
+    --accent:#14532d; --accent2:#1f4e5f;
+    --ok:#1c6b3c; --warn:#8a5a00; --bad:#9b2226; --pend:#5b6470;
+    --okbg:#e8f5ec; --warnbg:#fdf3dd; --badbg:#fbeaea; --pendbg:#eef1f4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px 96px}
+  header.top{background:linear-gradient(160deg,#14532d,#1f4e5f);color:#fff;padding:40px 0 32px}
+  header.top .wrap{padding-bottom:0}
+  header.top h1{font-size:1.85rem;line-height:1.25;margin:0 0 10px;font-weight:700;letter-spacing:-.01em}
+  header.top .sub{color:#cfe0d6;margin:0 0 22px;font-size:.98rem}
+  .profile{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+  .profile li{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 12px}
+  .profile dt{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:#a8c4b4;margin-bottom:3px}
+  .profile dd{margin:0;font-weight:600;font-size:.95rem}
+  nav.toc{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:14px 18px;margin:22px 0 30px}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:32px}
+  @media(max-width:640px){nav.toc ol{columns:1}}
+  nav.toc a{color:var(--accent2);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  h2{font-size:1.33rem;margin:44px 0 6px;padding-bottom:8px;border-bottom:2px solid var(--rule);letter-spacing:-.01em}
+  h3{font-size:1.06rem;margin:26px 0 8px}
+  h4{font-size:.93rem;margin:18px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  p{margin:10px 0}
+  a{color:var(--accent2)}
+  .lede{font-size:1.05rem;color:#2c3540}
+  code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:.88em}
+  .src{font-size:.78rem;color:var(--muted)}
+  .src a{color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.88rem;background:var(--card)}
+  caption{caption-side:top;text-align:left;font-size:.82rem;color:var(--muted);padding-bottom:6px}
+  th,td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#f2f4f7;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#414b57}
+  tbody tr:nth-child(even){background:#fafbfc}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .badge{display:inline-block;font-size:.71rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap;letter-spacing:.03em}
+  .b-ok{background:var(--okbg);color:var(--ok)} .b-warn{background:var(--warnbg);color:var(--warn)}
+  .b-bad{background:var(--badbg);color:var(--bad)} .b-pend{background:var(--pendbg);color:var(--pend)}
+  .b-info{background:#e7eef5;color:var(--accent2)}
+  .callout{border-left:4px solid var(--accent2);background:var(--card);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+  .callout.danger{border-left-color:var(--bad);background:var(--badbg)}
+  .callout.win{border-left-color:var(--ok);background:var(--okbg)}
+  .callout.amber{border-left-color:var(--warn);background:var(--warnbg)}
+  .callout h4{margin-top:0;color:inherit;text-transform:none;letter-spacing:0;font-size:.95rem}
+  .callout p:last-child{margin-bottom:0}
+  ul.tight li{margin:4px 0}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  footer.end{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-size:.82rem;color:var(--muted)}
+  @media print{
+    header.top{background:#fff;color:#000;padding:0 0 12px}
+    header.top .sub,.profile dt{color:#444}
+    .profile li{border:1px solid #ccc;background:#fff}
+    nav.toc{display:none}
+    body{background:#fff;font-size:10.5pt}
+    .wrap{max-width:none;padding:0}
+    h2{page-break-after:avoid}
+    table,.callout{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Top of funnel — apply at volume</h1>
+    <p class="sub">A playbook for submitting to every minimally-eligible funded philosophy PhD: Germany, the English-speaking world, and everywhere English, German or Hindi is enough · <a href="./index.html" style="color:#cfe0d6">back to the study app</a></p>
+    <ul class="profile">
+      <li><dl><dt>Principle</dt><dd>Numbers, not topic</dd></dl></li>
+      <li><dl><dt>Languages</dt><dd>English · German · Hindi</dd></dl></li>
+      <li><dl><dt>Target</dt><dd>8–12 applications / month</dd></dl></li>
+      <li><dl><dt>Assumption</dt><dd>No edge — apply anyway</dd></dl></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <ol>
+    <li><a href="#premise">The premise</a></li>
+    <li><a href="#monitor">The monitoring stack</a></li>
+    <li><a href="#filter">The 60-second eligibility filter</a></li>
+    <li><a href="#kit">The reusable application kit</a></li>
+    <li><a href="#germany">Germany (German / English)</a></li>
+    <li><a href="#english">English-speaking world</a></li>
+    <li><a href="#english-europe">English-medium Europe</a></li>
+    <li><a href="#objective">Objective-exam Europe (English oral OK)</a></li>
+    <li><a href="#india">India (English / Hindi)</a></li>
+    <li><a href="#rhythm">The weekly rhythm &amp; tracker</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ol>
+</nav>
+
+<!-- ============================================================ -->
+<section id="premise">
+<h2>1. The premise</h2>
+
+<p class="lede">With no edge assumed, the only lever you fully control is <strong>how many funded
+slots you enter</strong>. Every application is a lottery ticket with a low individual probability; the
+expected number of funded offers scales with the number of tickets, not with how cleverly you picked a
+topic. So the system is: <strong>monitor everything → triage in seconds → apply to anything you are
+formally eligible for.</strong></p>
+
+<div class="callout win">
+  <h4>The one rule</h4>
+  <p><strong>If you meet the formal requirements, you apply.</strong> Do not pre-reject yourself on
+  pedigree, on "my M.A. is distance-mode", or on "I only 60% fit the topic." Judging fit is the
+  committee's job — your job is to give them the chance to say yes. Self-rejection is the single biggest
+  funnel leak, and it is exactly the thing a volume strategy is designed to remove.</p>
+</div>
+
+<div class="callout amber">
+  <h4>The honest boundary</h4>
+  <p>Volume is not "apply to everything on Earth." Some slots are <em>hard-closed</em> — they require a
+  thesis-based master's, a specific citizenship, or a degree-recognition certificate you don't have. Those
+  you skip (the filter in §3 catches them). Everything else, you apply to.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="monitor">
+<h2>2. The monitoring stack</h2>
+
+<p>Funded philosophy PhDs appear in a small, fixed set of places. Check these in a loop; don't wait for
+"application season" because Europe posts year-round.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:24%">Board</th><th>What it carries</th><th>Use it for</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://philjobs.org/" rel="noopener">PhilJobs</a></td><td>The philosophy profession's own board (APA)</td><td>US/Canada/UK/AU/NZ and European posts; filter by PhD/fellowship</td></tr>
+    <tr><td><a href="https://academicjobs.fandom.com/wiki/Philosophy" rel="noopener">Academic Jobs Wiki — Philosophy</a></td><td>Crowd-tracked live postings &amp; outcomes</td><td>See what's open now + which have already shortlisted</td></tr>
+    <tr><td><a href="https://networks.h-net.org/jobs" rel="noopener">H-Net Job Guide</a></td><td>Humanities/social-science academic jobs</td><td>European chairs, DFG projects, non-Western posts</td></tr>
+    <tr><td><a href="https://euraxess.ec.europa.eu/" rel="noopener">EURAXESS</a></td><td>EU-wide researcher jobs &amp; PhDs</td><td>Salaried PhD positions across the EU — the single best Europe-wide feed</td></tr>
+    <tr><td><a href="https://scholarshipdb.net/" rel="noopener">ScholarshipDB</a></td><td>Scholarships + funded PhDs, filterable by country/field</td><td>Quick country × "Philosophy" × "PhD" sweeps</td></tr>
+    <tr><td><a href="https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/" rel="noopener">DAAD scholarship database</a></td><td>All DAAD funding for Germany</td><td>Research grants for doctoral candidates, GSSP, country-specific</td></tr>
+    <tr><td><a href="https://gepris.dfg.de/" rel="noopener">DFG GEPRIS</a></td><td>Every DFG-funded project in Germany</td><td>Find live philosophy projects → note the PI → email them (proactive, §5)</td></tr>
+    <tr><td><a href="https://www.jobs.ac.uk/" rel="noopener">jobs.ac.uk</a> · <a href="https://www.findaphd.com/" rel="noopener">FindAPhD</a></td><td>UK/Ireland funded PhDs &amp; projects</td><td>UK DTP studentships, named funded projects</td></tr>
+    <tr><td><a href="https://academictransfer.com/" rel="noopener">AcademicTransfer</a> (NL) · <a href="https://www.jobbnorge.no/" rel="noopener">Jobbnorge</a> (NO)</td><td>Dutch/Norwegian salaried PhD jobs</td><td>English-medium salaried posts</td></tr>
+    <tr><td><a href="https://www.ugc.gov.in/" rel="noopener">UGC (India)</a></td><td>NET/JRF notifications</td><td>The funded Indian route (§9)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p class="src">University pages and cluster sites are the long tail: once you know your shortlist
+institutions, check their "Stellenangebote / Vacancies / Open positions" pages directly — many German
+and Dutch posts only appear there.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="filter">
+<h2>3. The 60-second eligibility filter</h2>
+
+<p>Run every posting through this in under a minute. It exists to let you apply fast and skip only the
+hard closes.</p>
+
+<ol class="tight">
+  <li><strong>Degree level met?</strong> M.A. completed (or completing) — yes → continue.</li>
+  <li><strong>Discipline in scope?</strong> Philosophy, or adjacent (logic, cognitive science, Indology/South Asian, history of ideas, religious studies) — yes → continue.</li>
+  <li><strong>Medium workable?</strong> English, German, or Hindi — yes → continue.</li>
+  <li><strong>Hard close?</strong> Any of: thesis-based master's explicitly required · citizenship/visa-restricted · a recognition certificate you lack · fees you can't meet. If a hard close is present → <strong>skip</strong>. Otherwise → continue.</li>
+  <li><strong>Apply.</strong> Topic fit at ~50–60% is enough. Send it.</li>
+</ol>
+
+<div class="callout danger">
+  <h4>Pre-verify the one thing that can zero you</h4>
+  <p>Degree recognition is the silent killer: Germany (Anabin / uni-assist), Italy (CIMEA comparability),
+  Portugal (DGES), Czechia (nostrification). Before you invest in a country lane, get a written answer on
+  whether a distance-mode M.A. is accepted. One email now prevents ten wasted applications later.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="kit">
+<h2>4. The reusable application kit</h2>
+
+<p>Volume only works if each application is cheap. Assemble these once; then each posting costs you a
+retargeted cover letter, not a from-scratch dossier.</p>
+
+<ul class="tight">
+  <li><strong>CV</strong> — 2 pages, academic, with a clear "research statement" block you retarget.</li>
+  <li><strong>Writing sample</strong> — the single thesis-depth paper (§note in the research-areas page): one document, used everywhere.</li>
+  <li><strong>Proposal (Exposé)</strong> — a 1–2 page master proposal you re-aim at each posting's theme in 30 minutes.</li>
+  <li><strong>Cover-letter template</strong> — 3 paragraphs: what you're applying to, why it fits, what you bring. Swap the middle paragraph.</li>
+  <li><strong>Two referees pre-agreed</strong> — briefed and ready to send letters on short notice.</li>
+  <li><strong>Documents bundle</strong> — transcripts, degree certificate, passport, language certificates, plus the recognition docs (Anabin/CIMEA) once obtained.</li>
+</ul>
+
+<p>Store these in one folder with clear filenames so a single application takes ~20 minutes, not an afternoon.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="germany">
+<h2>5. Germany (German / English)</h2>
+
+<p class="lede">Germany is the anchor: the largest number of salaried philosophy positions, and funding
+that does not require you to be admitted to a "program" first — a supervisor hires you or hosts your grant.</p>
+
+<ul class="tight">
+  <li><strong>Salaried positions</strong> — search EURAXESS, H-Net, PhilJobs and university job boards for
+  <code>Wissenschaftliche/r Mitarbeiter/in Philosophie</code>, <code>Promotionsstelle</code>,
+  <code>DFG-Projekt Philosophie</code>. Usually 50–75% TV-L E13, rolling, no fixed season.</li>
+  <li><strong>Proactive lane — DFG GEPRIS</strong> — search "Philosophie" in GEPRIS, list the active funded
+  projects, note the principal investigator, and email a 5-line inquiry with your CV + one-line project.
+  A funded PI who hasn't yet advertised is the cheapest high-value contact in the whole funnel.</li>
+  <li><strong>DAAD research grant for doctoral candidates</strong> — proposal + a host-supervisor letter;
+  stipend for ~1 year (extendable). Deadline typically ~October for the following year. The most objective German lane.</li>
+  <li><strong>DAAD GSSP</strong> — structured doctoral programs with DAAD-funded slots for internationals.</li>
+  <li><strong>Clusters / RTGs</strong> — Frankfurt <em>Normative Orders</em>, MCMP Munich, <em>Science of Intelligence</em> Berlin, and others: check their "Open positions / Calls" pages.</li>
+  <li><strong>Language</strong> — analytic clusters and many structured programs run in English; German C1 widens the salaried-position pool (some teaching duties need it).</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="english">
+<h2>6. English-speaking world</h2>
+
+<p>Mostly <em>program-funded</em> (you're admitted to a funded PhD cohort), so the game is one big
+<strong>December–January season</strong>, plus rolling named projects.</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th style="width:14%">Country</th><th>How it's funded</th><th>Where &amp; when</th></tr></thead>
+  <tbody>
+    <tr><td><strong>United States</strong></td><td>PhD programs fund you (tuition + stipend via TA/RA) — no separate scholarship</td><td>PhilJobs / university portals; deadlines Dec 1–Jan 15. Holistic &amp; competitive (pedigree counts — honest).</td></tr>
+    <tr><td><strong>Canada</strong></td><td>University funding + SSHRC via the department</td><td>Departmental sites; Dec–Jan deadlines.</td></tr>
+    <tr><td><strong>United Kingdom</strong></td><td>AHRC studentships through Doctoral Training Partnerships + named projects</td><td>jobs.ac.uk / FindAPhD; deadlines roughly Dec–Feb. Scarce and competitive.</td></tr>
+    <tr><td><strong>Ireland</strong></td><td>Irish Research Council (IRC) Postgraduate Scholarship — proposal-based</td><td>research.ie; ~Oct–Nov deadline; plus university scholarships.</td></tr>
+    <tr><td><strong>Australia</strong></td><td>RTP (fee offset + stipend); internationals via university scholarships</td><td>Contact a supervisor first, then apply ~Aug–Oct.</td></tr>
+    <tr><td><strong>New Zealand</strong></td><td>University doctoral scholarships</td><td>University sites; ~Oct or rolling.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p class="src">Honest note: the Anglosphere is the most pedigree-sensitive part of the funnel. With no
+edge, treat it as the <em>volume lane</em> (many programs, cheap applications) rather than the
+<em>highest-probability lane</em> — the objective-exam countries in §8 convert better per application.</p>
+</section>
+
+<!-- ============================================================ -->
+<section id="english-europe">
+<h2>7. English-medium Europe (salaried jobs, rolling)</h2>
+
+<p>These hire you as an employee or pay a stipend, usually in English, and post year-round.</p>
+
+<ul class="tight">
+  <li><strong>Netherlands</strong> — PhD is a 4-year salaried job; AcademicTransfer + EURAXESS + university sites.</li>
+  <li><strong>Nordics</strong> — Denmark (university job boards), Norway (Jobbnorge), Sweden (university + EURAXESS); English working language, salaried.</li>
+  <li><strong>Belgium</strong> — KU Leuven Institute of Philosophy (English); FWO fellowships (~€2,700/month, no nationality bar).</li>
+  <li><strong>Austria</strong> — university positions (analytic depts run in English); OeAD scholarships.</li>
+  <li><strong>Switzerland</strong> — university positions; Swiss Government Excellence Scholarship (~Nov deadline).</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="objective">
+<h2>8. Objective-exam Europe (English oral OK)</h2>
+
+<p>These are the "no-edge" converters from the funded guide — they score a proposal or an exam, not your
+pedigree. Most allow an English oral/English programme, so language is not a barrier.</p>
+
+<ul class="tight">
+  <li><strong>Italy</strong> — <em>concorso</em>: no minimum grade, no age/citizenship limit, oral in English (Sapienza, Bologna, Parma, SNS Pisa). Mar–Jun deadlines.</li>
+  <li><strong>Poland</strong> — doctoral schools: bachelor's scores <strong>zero</strong>, interview-heavy, tuition-free + stipend (Poznań, Warsaw, Jagiellonian). Apr–May.</li>
+  <li><strong>Czechia</strong> — oral on the proposal, no CGPA weighting (Charles University, Prague).</li>
+  <li><strong>Hungary</strong> — Stipendium Hungaricum, published pass mark (56/100), India named at doctoral level (ELTE Budapest).</li>
+  <li><strong>Romania</strong> — entrance examination, can be sat online.</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="india">
+<h2>9. India (English / Hindi)</h2>
+
+<ul class="tight">
+  <li><strong>UGC NET JRF</strong> — the funded route: ₹37,000→42,000/month for five years; the NET score
+  replaces the entrance test at DU, JNU, BHU and other central universities. Medium is English or Hindi.</li>
+  <li>This is the highest-certainty funded lane you already hold a ticket for (your NET sitting) — keep it
+  as the floor of the funnel while the rest is probabilistic.</li>
+</ul>
+</section>
+
+<!-- ============================================================ -->
+<section id="rhythm">
+<h2>10. The weekly rhythm &amp; tracker</h2>
+
+<h4>Cadence</h4>
+<ul class="tight">
+  <li><strong>Daily, 20–30 min</strong> — scan PhilJobs, H-Net, EURAXESS, ScholarshipDB, DAAD. Log every eligible posting.</li>
+  <li><strong>Two batch days a week</strong> — send 3–5 applications per batch using the kit (§4).</li>
+  <li><strong>Monthly</strong> — re-run the country sweeps (GEPRIS, DAAD database, IRC, DTPs) for seasonal deadlines.</li>
+  <li><strong>Target</strong> — 8–12 applications/month. A hundred low-probability tickets beats five perfect ones when you assume no edge.</li>
+</ul>
+
+<h4>Tracker columns (one spreadsheet)</h4>
+<div class="scroll">
+<table>
+  <thead><tr><th>Field</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Board / source</td><td>Where you saw it (for follow-up)</td></tr>
+    <tr><td>Institution · country · role</td><td>What it is</td></tr>
+    <tr><td>Deadline</td><td>Sort by this weekly</td></tr>
+    <tr><td>Medium (EN/DE/HI)</td><td>Language gate</td></tr>
+    <tr><td>Eligibility (pass/skip)</td><td>§3 filter result</td></tr>
+    <tr><td>Docs sent</td><td>CV / sample / proposal / letters / certificates</td></tr>
+    <tr><td>Status</td><td>Submitted · ack · shortlist · rejected · offer</td></tr>
+    <tr><td>Follow-up date</td><td>Anything &gt; 2 weeks old gets a polite nudge</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout">
+  <h4>The meta-rule</h4>
+  <p>Top-of-funnel is a <strong>throughput game</strong>. Your two real bottlenecks are not the topic and
+  not the language — they are (1) a writing sample that isn't thesis-depth yet, and (2) zero publications.
+  Every week you spend only applying without also upgrading those two is a week the funnel stays narrow.
+  Build the sample and get one publication <em>while</em> you apply, not instead of applying.</p>
+</div>
+</section>
+
+<!-- ============================================================ -->
+<section id="sources">
+<h2>11. Sources</h2>
+<ul class="tight">
+  <li><a href="https://philjobs.org/" rel="noopener">PhilJobs</a> · <a href="https://academicjobs.fandom.com/wiki/Philosophy" rel="noopener">Academic Jobs Wiki</a> · <a href="https://networks.h-net.org/jobs" rel="noopener">H-Net</a></li>
+  <li><a href="https://euraxess.ec.europa.eu/" rel="noopener">EURAXESS</a> · <a href="https://scholarshipdb.net/" rel="noopener">ScholarshipDB</a> · <a href="https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/" rel="noopener">DAAD database</a> · <a href="https://gepris.dfg.de/" rel="noopener">DFG GEPRIS</a></li>
+  <li><a href="https://www.jobs.ac.uk/" rel="noopener">jobs.ac.uk</a> · <a href="https://www.findaphd.com/" rel="noopener">FindAPhD</a> · <a href="https://academictransfer.com/" rel="noopener">AcademicTransfer</a> · <a href="https://www.jobbnorge.no/" rel="noopener">Jobbnorge</a></li>
+  <li><a href="https://research.ie/" rel="noopener">Irish Research Council</a> · <a href="https://www.ugc.gov.in/" rel="noopener">UGC India</a></li>
+</ul>
+</section>
+
+<footer class="end">
+  <p><strong>Related:</strong> <a href="./index.html">Study app</a> ·
+  <a href="./languages.html">Languages · German, English &amp; Sanskrit</a> ·
+  <a href="./german-phd-research-areas.html">German PhD research areas</a> ·
+  <a href="./funded-phd-guide.html">Funded PhD &amp; no-tuition master's guide</a> ·
+  <a href="./funding/index.html">Funding map (65 programmes)</a></p>
+  <p>A top-of-funnel application playbook. Boards, deadlines and funding rules change continuously — treat
+  every named deadline and scheme as needing re-verification before you rely on it.</p>
+</footer>
+
+</div>
+</body>
+</html>
